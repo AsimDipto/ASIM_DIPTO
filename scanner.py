@@ -1,15 +1,15 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-# ১. মূল আইপি ঠিক থাকলে চ্যানেল হারাবে না
+# ১. সার্ভার এবং লোগো পাথ
 base_url = "http://203.18.159.115/"
-# লোগো ফোল্ডারের পাথ
+# এখানে 'AsimDipto' এবং 'ASIM_DIPTO' আপনার গিটহাব ইউজারনেম ও রিপোজিটরি অনুযায়ী ঠিক আছে কি না দেখে নিন
 logo_base = "https://raw.githubusercontent.com/AsimDipto/ASIM_DIPTO/main/logos/"
 
-# আপনার সিরিয়াল অনুযায়ী ডাটা
+# ২. সব ৬২টি চ্যানেলের লিস্ট (আইডি, নাম, লোগো ফাইল)
 CHANNELS_DATA = [
-    ("COLORSHD", "Colors HD", "colorshd.png"),
-    ("ZEETVHD", "Zee TV HD", "zeetvhd.png"),
+    ("COLORSHD", "Colors HD", "colors.png"),
+    ("ZEETVHD", "Zee TV HD", "zeetv.png"),
     ("ZEECINEMAHD", "Zee Cinema HD", "zeecinema.png"),
     ("SONYYAY", "Sony Yay", "sonyyay.png"),
     ("SONYAAT", "Sony Aath", "sonyaath.png"),
@@ -29,60 +29,86 @@ CHANNELS_DATA = [
     ("SUNBANGLAHD", "Sun Bangla HD", "sunbangla.png"),
     ("STARPLUSHD", "Star Plus HD", "starplus.png"),
     ("TSPORTS", "T Sports HD", "tsports.png"),
-    ("NATGEOWILDHD", "National Geo Wild HD", "natgeowild.png")
-    # এভাবে বাকি সব চ্যানেলের আইডি ও ছবির নাম যোগ করবেন
+    ("STARBHARATHD", "Star Bharat HD", "starbharat.png"),
+    ("NATGEOWILDHD", "National Geo Wild HD", "natgeowild.png"),
+    ("STARMOVIESSELECTHD", "Star Movies Select HD", "starmoviesselect.png"),
+    ("HUNGAMA", "Hungama", "hungama.png"),
+    ("STARSPORTS1HD", "Star Sports 1 HD", "starsports1.png"),
+    ("STARSPORTS2HD", "Star Sports 2 HD", "starsports2.png"),
+    ("SONYSPORTS2HD", "Sony Sports Ten 2 HD", "sonysports2.png"),
+    ("SONYSPORTS1HD", "Sony Sports Ten 1 HD", "sonysports1.png"),
+    ("SONYSPORTS5HD", "Sony Sports Ten 5 HD", "sonysports5.png"),
+    ("ENTERR10", "Enter10 Bangla", "enter10.png"),
+    ("POGO", "Pogo", "pogo.png"),
+    ("NAGORIK", "Nagorik TV", "nagorik.png"),
+    ("DURANTATV", "Duronto TV", "duronto.png"),
+    ("CHANNEL24", "Channel 24", "channel24.png"),
+    ("JAMUNATV", "Jamuna TV", "jamuna.png"),
+    ("NICKJR", "Nick Jr", "nickjr.png"),
+    ("SONYENTHD", "Sony Entertainment TV HD", "sonyent.png"),
+    ("MOVIESNOWHD", "Movies Now HD", "moviesnow.png"),
+    ("MNXHD", "MNX HD", "mnx.png"),
+    ("TLCHD", "TLC HD", "tlc.png"),
+    ("STARJALSHAHD", "Star Jalsha HD", "starjalsha.png"),
+    ("JALSHAMOVIESHD", "Jalsha Movies HD", "jalshamovies.png"),
+    ("COLORSBANGLAHD", "Colors Bangla HD", "colorsbangla.png"),
+    ("COLORSBANGLACINEMA", "Colors Bangla Cinema", "colorsbanglacinema.png"),
+    ("ZEEBANGLAHD", "Zee Bangla HD", "zeebangla.png"),
+    ("ZEEBANGLACINEMA", "Zee Bangla Cinema", "zeebanglacinema.png"),
+    ("COLORSCINEPLEXHD", "Colors Cineplex HD", "colorscineplex.png"),
+    ("NATGEOHD", "National Geographic HD", "natgeo.png"),
+    ("INDEPENDENTTV", "Independent TV", "independent.png"),
+    ("MAASRANGAHD", "Maasranga HD", "maasranga.png"),
+    ("ZING", "Zing", "zing.png"),
+    ("BALBHARAT", "Bal Bharat", "balbharat.png"),
+    ("AXNHD", "AXN HD", "axn.png"),
+    ("PTVSPORTSHD", "PTV Sports HD", "ptvsports.png"),
+    ("ASPORTSHD", "A Sports HD", "asports.png"),
+    ("STARSPORTS3", "Star Sports 3", "starsports3.png"),
+    ("STARSELECT1HD", "Star Sports Select 1 HD", "starsportsselect1.png"),
+    ("STARGOLDSELECTHD", "Star Gold Select HD", "stargoldselect.png"),
+    ("STARSPORTSSELECT2HD", "Star Sports Select 2 HD", "starsportsselect2.png"),
+    ("HISTORYTVHD", "History TV HD", "history.png"),
+    ("BBCEARTHHD", "BBC Earth HD", "bbcearth.png")
 ]
 
-# মালিক যদি লিঙ্কের শেষ অংশ বদলায়, এই লিস্ট সেটা খুঁজে বের করবে
+# ৩. মালিকের ট্রিকস ধরার সাফিক্স লিস্ট
 POSSIBLE_SUFFIXES = [
     "/tracks-v1a1/mono.m3u8", 
     "/mono.m3u8", 
     "/index.m3u8", 
-    "/playlist.m3u8",
-    "/chunks.m3u8",
-    "/video.m3u8"
+    "/playlist.m3u8"
 ]
 
-def deep_scan(ch, session, found_list):
-    ch_id, ch_name, logo_file = ch
-    
-    # মালিক বড় বা ছোট হাতের নাম বদলালে এটি ধরবে
+def scan_logic(ch, session, results):
+    ch_id, display_name, logo_file = ch
     id_variants = [ch_id.upper(), ch_id.lower(), ch_id.capitalize()]
     
     for variant in id_variants:
         for sfx in POSSIBLE_SUFFIXES:
-            test_url = f"{base_url}{variant}{sfx}"
+            url = f"{base_url}{variant}{sfx}"
             try:
-                # User-Agent যোগ করা হয়েছে যাতে সার্ভার ব্লক না করে
                 headers = {'User-Agent': 'VLC/3.0.12 LibVLC/3.0.12'}
-                r = session.head(test_url, headers=headers, timeout=2.0, allow_redirects=True)
-                
+                r = session.head(url, headers=headers, timeout=2.0)
                 if r.status_code == 200:
                     full_logo = f"{logo_base}{logo_file}"
-                    found_list.append((ch_name, test_url, full_logo))
-                    print(f"✅ FOUND: {ch_name} (at {variant}{sfx})")
-                    return # সচল লিঙ্ক পাওয়া গেলে লুপ বন্ধ হবে
-            except:
-                continue
+                    results.append((display_name, url, full_logo))
+                    return
+            except: continue
 
 def main():
     session = requests.Session()
     found_channels = []
-
-    print("🔍 Deep Scanning starting... Please wait.")
-
-    # ১০ জন একসাথে কাজ করবে যাতে দ্রুত হয়
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=15) as executor:
         for ch in CHANNELS_DATA:
-            executor.submit(deep_scan, ch, session, found_channels)
+            executor.submit(scan_logic, ch, session, found_channels)
 
-    # সিরিয়াল ঠিক রেখে সেভ করা
     with open("only_new_channels.m3u", "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for original in CHANNELS_DATA:
             for item in found_channels:
                 if item[0] == original[1]:
-                    f.write(f'#EXTINF:-1 tvg-logo="{item[2]}" group-title="Asim_BDIX",{item[0]}\n{item[1]}\n\n')
+                    f.write(f'#EXTINF:-1 tvg-logo="{item[2]}" group-title="ASIM_BDIX",{item[0]}\n{item[1]}\n\n')
 
 if __name__ == "__main__":
     main()
