@@ -1,27 +1,27 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ro7bedn.png" group-title="ASIM_HD",SONYMAXHD
-http://203.18.159.115/SONYMAXHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/2YNY8jdf/Untitled-459-x-459-px.png" group-title="ASIM_HD",SONYBBCEARTHHD
-http://203.18.159.115/SONYBBCEARTHHD/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/wzs2D6J/zee-cinema-hd.png" group-title="ASIM_HD",ZEECINEMAHD
 http://203.18.159.115/ZEECINEMAHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png" group-title="ASIM_HD",DISCOVERYHD
 http://203.18.159.115/DISCOVERYHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://live.dinesh29.com.np/logos/jiotvplus/animalplanethindi.png" group-title="ASIM_HD",ANIMALPLANETHD
-http://203.18.159.115/ANIMALPLANETHD/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://images.toffeelive.com/images/program/2419/logo/240x240/mobile_logo_287412001666784602.png" group-title="ASIM_HD",SONYPIXHD
 http://203.18.159.115/SONYPIXHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/k2qVdgrK/STAR-GOLD-HD.png" group-title="ASIM_HD",STARGOLDHD
-http://203.18.159.115/STARGOLDHD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2YNY8jdf/Untitled-459-x-459-px.png" group-title="ASIM_HD",SONYBBCEARTHHD
+http://203.18.159.115/SONYBBCEARTHHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ro7bedn.png" group-title="ASIM_HD",SONYMAXHD
+http://203.18.159.115/SONYMAXHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://live.dinesh29.com.np/logos/jiotvplus/animalplanethindi.png" group-title="ASIM_HD",ANIMALPLANETHD
+http://203.18.159.115/ANIMALPLANETHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png" group-title="ASIM_HD",STARMOVIESHD
 http://203.18.159.115/STARMOVIESHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k2qVdgrK/STAR-GOLD-HD.png" group-title="ASIM_HD",STARGOLDHD
+http://203.18.159.115/STARGOLDHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/35/Nickelodeon_Sonic_logo_2019.png" group-title="ASIM_HD",SONIC
 http://203.18.159.115/SONIC/tracks-v1a1/mono.m3u8
@@ -65,8 +65,14 @@ http://203.18.159.115/STARJALSHAHD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2PQfcOh.png" group-title="ASIM_HD",JALSHAMOVIESHD
 http://203.18.159.115/JALSHAMOVIESHD/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/pdj5yXrb/Colors-HD.png" group-title="ASIM_HD",COLORSHD
+http://203.18.159.115/COLORSHD/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.ibb.co/77ByDrw/SONY-YAY.png" group-title="ASIM_HD",SONYYAY
 http://203.18.159.115/SONYYAY/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png" group-title="ASIM_HD",ATNBANGLA
+http://203.18.159.115/ATNBANGLA/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/WkBp9kr/Zee-TV-HD-2017.png" group-title="ASIM_HD",ZEETVHD
 http://203.18.159.115/ZEETVHD/index.m3u8
@@ -76,9 +82,6 @@ http://203.18.159.115/SUNBANGLAHD/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png" group-title="ASIM_HD",SOMOYTV
 http://203.18.159.115/SOMOYTV/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png" group-title="ASIM_HD",ATNBANGLA
-http://203.18.159.115/ATNBANGLA/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/HVZHZGl.png" group-title="ASIM_HD",COLORSBANGLAHD
 http://203.18.159.115/COLORSBANGLAHD/mono.m3u8
