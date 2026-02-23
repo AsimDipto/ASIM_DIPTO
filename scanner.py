@@ -1,12 +1,12 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-# ১. সার্ভার এবং লোগো পাথ
+# ১. সার্ভার আইপি এবং আপনার গিটহাব লোগো ফোল্ডারের RAW লিঙ্ক
 base_url = "http://203.18.159.115/"
-# এখানে 'AsimDipto' এবং 'ASIM_DIPTO' আপনার গিটহাব ইউজারনেম ও রিপোজিটরি অনুযায়ী ঠিক আছে কি না দেখে নিন
+# এখানে 'AsimDipto' এবং 'ASIM_DIPTO' আপনার গিটহাব ইউজারনেম অনুযায়ী ঠিক করে নিন
 logo_base = "https://raw.githubusercontent.com/AsimDipto/ASIM_DIPTO/main/logos/"
 
-# ২. সব ৬২টি চ্যানেলের লিস্ট (আইডি, নাম, লোগো ফাইল)
+# ২. আপনার দেওয়া ৬২টি চ্যানেলের পূর্ণাঙ্গ ডাটা (আইডি, নাম, এবং ছবির নাম)
 CHANNELS_DATA = [
     ("COLORSHD", "Colors HD", "colors.png"),
     ("ZEETVHD", "Zee TV HD", "zeetv.png"),
@@ -72,7 +72,7 @@ CHANNELS_DATA = [
     ("BBCEARTHHD", "BBC Earth HD", "bbcearth.png")
 ]
 
-# ৩. মালিকের ট্রিকস ধরার সাফিক্স লিস্ট
+# ৩. মালিকের ট্রিকস ধরার জন্য সাফিক্স লিস্ট
 POSSIBLE_SUFFIXES = [
     "/tracks-v1a1/mono.m3u8", 
     "/mono.m3u8", 
@@ -82,33 +82,45 @@ POSSIBLE_SUFFIXES = [
 
 def scan_logic(ch, session, results):
     ch_id, display_name, logo_file = ch
+    # Case sensitivity ট্রিকস ধরার জন্য ভ্যারিয়েশন
     id_variants = [ch_id.upper(), ch_id.lower(), ch_id.capitalize()]
     
     for variant in id_variants:
         for sfx in POSSIBLE_SUFFIXES:
             url = f"{base_url}{variant}{sfx}"
             try:
+                # VLC Player হিসেবে নিজেকে পরিচয় দেওয়া
                 headers = {'User-Agent': 'VLC/3.0.12 LibVLC/3.0.12'}
-                r = session.head(url, headers=headers, timeout=2.0)
+                r = session.head(url, headers=headers, timeout=2.0, allow_redirects=True)
+                
                 if r.status_code == 200:
+                    # লোগোকে আপনার গিটহাবের logos ফোল্ডারের সাথে কানেক্ট করা
                     full_logo = f"{logo_base}{logo_file}"
                     results.append((display_name, url, full_logo))
+                    print(f"✅ Found: {display_name}")
                     return
-            except: continue
+            except:
+                continue
 
 def main():
     session = requests.Session()
     found_channels = []
+
+    print("🚀 Deep Scanning with Local Logo support...")
+
     with ThreadPoolExecutor(max_workers=15) as executor:
         for ch in CHANNELS_DATA:
             executor.submit(scan_logic, ch, session, found_channels)
 
+    # সিরিয়াল ঠিক রেখে .m3u ফাইল তৈরি
     with open("only_new_channels.m3u", "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for original in CHANNELS_DATA:
             for item in found_channels:
                 if item[0] == original[1]:
-                    f.write(f'#EXTINF:-1 tvg-logo="{item[2]}" group-title="ASIM_BDIX",{item[0]}\n{item[1]}\n\n')
+                    f.write(f'#EXTINF:-1 tvg-logo="{item[2]}" group-title="Asim_BDIX",{item[0]}\n{item[1]}\n\n')
+    
+    print(f"✨ Update Complete. Total {len(found_channels)} channels saved.")
 
 if __name__ == "__main__":
     main()
