@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return "IPTV Playlist is Running! Use /playlist.m3u for the link."
 
-@app.route('/playlist.m3u')
+@app.route('/Asim-dipto-ad-channels-dipto114119201-allchannels.m3u')
 def get_playlist():
     filename = "only_new_channels.m3u"
     if os.path.exists(filename):
