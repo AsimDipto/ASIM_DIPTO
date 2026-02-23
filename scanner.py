@@ -1,56 +1,73 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
-import itertools
-import string
 
-# আপনার টার্গেট আইপি
+# বেস ইউআরএল
 base_url = "http://203.18.159.115/"
 
-def check_url(url, session, found_channels):
-    try:
-        # সুপার ফাস্ট করার জন্য timeout ০.২ সেকেন্ড
-        r = session.head(url, timeout=0.2)
-        if r.status_code == 200:
-            print(f"CRACKED: {url}")
-            found_channels.append(url)
-    except:
-        pass
+# আপনার দেওয়া সেই ৬২টি চ্যানেলের আইডি লিস্ট
+CHANNELS = [
+    "COLORSHD", "ZEETVHD", "ZEECINEMAHD", "SONYYAY", "SONYAAT", "SONYPIXHD", 
+    "SONYMAXHD", "SONYBBCEARTHHD", "DISCOVERYHD", "ANIMALPLANETHD", "SOMOYTV", 
+    "ATNBANGLA", "STARGOLDHD", "STARMOVIESHD", "SONIC", "CARTOONNETWORK", 
+    "NICK", "ZEECAFEHD", "SUNBANGLAHD", "STARPLUSHD", "TSPORTS", "STARBHARATHD", 
+    "NATGEOWILDHD", "STARMOVIESSELECTHD", "HUNGAMA", "STARSPORTS1HD", "STARSPORTS2HD", 
+    "SONYSPORTS2HD", "SONYSPORTS1HD", "SONYSPORTS5HD", "ENTERR10", "POGO", 
+    "NAGORIK", "DURANTATV", "CHANNEL24", "JAMUNATV", "NICKJR", "SONYENTHD", 
+    "MOVIESNOWHD", "MNXHD", "TLCHD", "STARJALSHAHD", "JALSHAMOVIESHD", 
+    "COLORSBANGLAHD", "COLORSBANGLACINEMA", "ZEEBANGLAHD", "ZEEBANGLACINEMA", 
+    "COLORSCINEPLEXHD", "NATGEOHD", "INDEPENDENTTV", "MAASRANGAHD", "ZING", 
+    "BALBHARAT", "AXNHD", "PTVSPORTSHD", "ASPORTSHD", "STARSPORTS3", 
+    "STARSELECT1HD", "STARGOLDSELECTHD", "STARSPORTSSELECT2HD", "HISTORYTVHD", "BBCEARTHHD"
+]
+
+# মালিক যদি পাথ বা এক্সটেনশন চেঞ্জ করে, এই ৫টি ফরম্যাট চেক হবে
+SUFFIXES = [
+    "/tracks-v1a1/mono.m3u8",
+    "/mono.m3u8",
+    "/index.m3u8",
+    "/chunks.m3u8",
+    "/video.m3u8"
+]
+
+def check_channel(ch_id, session, found):
+    # বড় হাত এবং ছোট হাত দুইভাবেই ট্রাই করবে (মালিকের ট্রিকস ধরার জন্য)
+    variations = [ch_id.upper(), ch_id.lower()]
+    
+    for v in variations:
+        for sfx in SUFFIXES:
+            url = f"{base_url}{v}{sfx}"
+            try:
+                # ১.৫ সেকেন্ডের মধ্যে চেক করবে সচল কি না
+                r = session.head(url, timeout=1.5, allow_redirects=True)
+                if r.status_code == 200:
+                    found.append((ch_id, url))
+                    print(f"CRACKED: {v}{sfx}")
+                    return # একটা পাওয়া গেলে ওই চ্যানেলের জন্য আর চেক করবে না
+            except:
+                pass
 
 def main():
-    # ২-অক্ষরের সব কোড এবং ১০০০টি নম্বর জেনারেট করা
-    scan_set = set()
-    chars = string.ascii_lowercase + string.digits
-    scan_set.update([''.join(i) for i in itertools.product(chars, repeat=2)])
-    for i in range(0, 1001):
-        scan_set.add(str(i))
-    
-    # ফ্লুসোনিক সার্ভারের ৩টি প্রধান পাথ
-    suffixes = ["/mono.m3u8", "/index.m3u8", "/tracks-v1a1/mono.m3u8"]
     found_channels = []
-    
     session = requests.Session()
     session.headers.update({'User-Agent': 'VLC/3.0.12'})
 
-    print(f"Ultra Fast Scan Started... Checking {len(scan_set)} IDs")
+    print(f"Deep Scanning Started for {len(CHANNELS)} channels...")
 
-    # একসাথে ১৫টি থ্রেড বা কানেকশন ব্যবহার করে গতি বাড়ানো হয়েছে
-    with ThreadPoolExecutor(max_workers=15) as executor:
-        for channel in scan_set:
-            for sfx in suffixes:
-                url = f"{base_url}{channel}{sfx}"
-                executor.submit(check_url, url, session, found_channels)
+    # একসাথে ১০টি করে রিকোয়েস্ট পাঠাবে (Speed & Safety)
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        for ch in CHANNELS:
+            executor.submit(check_channel, ch, session, found_channels)
 
-    # ফাইল সেভ করা (আপনার দেওয়া নামে)
+    # প্লেলিস্ট ফাইল তৈরি
     with open("only_new_channels.m3u", "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        for link in found_channels:
-            try:
-                name = link.split('/')[-2]
-            except:
-                name = "Unknown"
-            f.write(f'#EXTINF:-1 group-title="ASIM_ULTRA_FAST",{name}\n{link}\n\n')
-
-    print(f"Finished! Found {len(found_channels)} streams.")
+        if not found_channels:
+            f.write("# No active channels found at this moment\n")
+        else:
+            for name, link in found_channels:
+                f.write(f'#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",{name}\n{link}\n\n')
+    
+    print(f"Successfully found {len(found_channels)} active channels.")
 
 if __name__ == "__main__":
     main()
