@@ -1,187 +1,91 @@
 #EXTM3U
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ZEECINEMAHD
-http://203.18.159.115/ZEECINEMAHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYMAXHD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ro7bedn.png" group-title="ASIM_HD",SONYMAXHD
 http://203.18.159.115/SONYMAXHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",DISCOVERYHD
-http://203.18.159.115/DISCOVERYHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYPIXHD
-http://203.18.159.115/SONYPIXHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYBBCEARTHHD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2YNY8jdf/Untitled-459-x-459-px.png" group-title="ASIM_HD",SONYBBCEARTHHD
 http://203.18.159.115/SONYBBCEARTHHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ANIMALPLANETHD
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/wzs2D6J/zee-cinema-hd.png" group-title="ASIM_HD",ZEECINEMAHD
+http://203.18.159.115/ZEECINEMAHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png" group-title="ASIM_HD",DISCOVERYHD
+http://203.18.159.115/DISCOVERYHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://live.dinesh29.com.np/logos/jiotvplus/animalplanethindi.png" group-title="ASIM_HD",ANIMALPLANETHD
 http://203.18.159.115/ANIMALPLANETHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARGOLDHD
+#EXTINF:-1 tvg-logo="https://images.toffeelive.com/images/program/2419/logo/240x240/mobile_logo_287412001666784602.png" group-title="ASIM_HD",SONYPIXHD
+http://203.18.159.115/SONYPIXHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k2qVdgrK/STAR-GOLD-HD.png" group-title="ASIM_HD",STARGOLDHD
 http://203.18.159.115/STARGOLDHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARMOVIESHD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png" group-title="ASIM_HD",STARMOVIESHD
 http://203.18.159.115/STARMOVIESHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",CARTOONNETWORK
-http://203.18.159.115/CARTOONNETWORK/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONIC
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/35/Nickelodeon_Sonic_logo_2019.png" group-title="ASIM_HD",SONIC
 http://203.18.159.115/SONIC/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",NICK
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/telelibrary/images/c/cb/Cartoon_Network_HD%2B_-_logo.png" group-title="ASIM_HD",CARTOONNETWORK
+http://203.18.159.115/CARTOONNETWORK/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/channel/3dd2e26ab832cfe736739b86d57d21e9.png" group-title="ASIM_HD",NICK
 http://203.18.159.115/NICK/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ZEECAFEHD
+#EXTINF:-1 tvg-logo="" group-title="ASIM_HD",ZEECAFEHD
 http://203.18.159.115/ZEECAFEHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",TSPORTS
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/nNB5kRKY/T-Sports-HD.png" group-title="ASIM_HD",TSPORTS
 http://203.18.159.115/TSPORTS/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",NATGEOWILDHD
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3e/Nat_Geo_Wild_HD_logo.png" group-title="ASIM_HD",NATGEOWILDHD
 http://203.18.159.115/NATGEOWILDHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARMOVIESSELECTHD
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png" group-title="ASIM_HD",STARMOVIESSELECTHD
 http://203.18.159.115/STARMOVIESSELECTHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",HUNGAMA
-http://203.18.159.115/HUNGAMA/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYAAT
+#EXTINF:-1 tvg-logo="https://i.ibb.co/W4Lh50kc/SONY-AATH-HD.png" group-title="ASIM_HD",SONYAAT
 http://203.18.159.115/SONYAAT/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARSPORTS1HD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/t0Ecro6.png" group-title="ASIM_HD",HUNGAMA
+http://203.18.159.115/HUNGAMA/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/1200px-Star_Sports_1_HD.png" group-title="ASIM_HD",STARSPORTS1HD
 http://203.18.159.115/STARSPORTS1HD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARSPORTS2HD
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ac/Star_Sports_2.jpg" group-title="ASIM_HD",STARSPORTS2HD
 http://203.18.159.115/STARSPORTS2HD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYSPORTS2HD
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WkBp9kr/Zee-TV-HD-2017.png" group-title="ASIM_HD",SONYSPORTS2HD
 http://203.18.159.115/SONYSPORTS2HD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYYAY
-http://203.18.159.115/SONYYAY/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYSPORTS1HD
-http://203.18.159.115/SONYSPORTS1HD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYSPORTS5HD
-http://203.18.159.115/SONYSPORTS5HD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",NAGORIK
-http://203.18.159.115/NAGORIK/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",COLORSHD
-http://203.18.159.115/COLORSHD/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ZEETVHD
-http://203.18.159.115/ZEETVHD/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SOMOYTV
-http://203.18.159.115/SOMOYTV/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ATNBANGLA
-http://203.18.159.115/ATNBANGLA/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",NICKJR
-http://203.18.159.115/NICKJR/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SUNBANGLAHD
-http://203.18.159.115/SUNBANGLAHD/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",MOVIESNOWHD
-http://203.18.159.115/MOVIESNOWHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",MNXHD
-http://203.18.159.115/MNXHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",TLCHD
-http://203.18.159.115/TLCHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARJALSHAHD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9d1xXjN.png" group-title="ASIM_HD",STARJALSHAHD
 http://203.18.159.115/STARJALSHAHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",JALSHAMOVIESHD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2PQfcOh.png" group-title="ASIM_HD",JALSHAMOVIESHD
 http://203.18.159.115/JALSHAMOVIESHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARPLUSHD
-http://203.18.159.115/STARPLUSHD/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/77ByDrw/SONY-YAY.png" group-title="ASIM_HD",SONYYAY
+http://203.18.159.115/SONYYAY/index.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",COLORSBANGLACINEMA
-http://203.18.159.115/COLORSBANGLACINEMA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/WkBp9kr/Zee-TV-HD-2017.png" group-title="ASIM_HD",ZEETVHD
+http://203.18.159.115/ZEETVHD/index.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARBHARATHD
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/20/Sun_Bangla_HD_logo_2023.png" group-title="ASIM_HD",SUNBANGLAHD
+http://203.18.159.115/SUNBANGLAHD/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png" group-title="ASIM_HD",SOMOYTV
+http://203.18.159.115/SOMOYTV/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png" group-title="ASIM_HD",ATNBANGLA
+http://203.18.159.115/ATNBANGLA/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/HVZHZGl.png" group-title="ASIM_HD",COLORSBANGLAHD
+http://203.18.159.115/COLORSBANGLAHD/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/PZvWHvfM/STAR-BHARAT-HD.png" group-title="ASIM_HD",STARBHARATHD
 http://203.18.159.115/STARBHARATHD/index.m3u8
 
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",COLORSCINEPLEXHD
-http://203.18.159.115/COLORSCINEPLEXHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",NATGEOHD
-http://203.18.159.115/NATGEOHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",SONYENTHD
-http://203.18.159.115/SONYENTHD/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",POGO
-http://203.18.159.115/POGO/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",JAMUNATV
-http://203.18.159.115/JAMUNATV/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",DURANTATV
-http://203.18.159.115/DURANTATV/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",AXNHD
-http://203.18.159.115/AXNHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",PTVSPORTSHD
-http://203.18.159.115/PTVSPORTSHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ASPORTSHD
-http://203.18.159.115/ASPORTSHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",MAASRANGAHD
-http://203.18.159.115/MAASRANGAHD/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARSPORTS3
-http://203.18.159.115/STARSPORTS3/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARSELECT1HD
-http://203.18.159.115/STARSELECT1HD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARGOLDSELECTHD
-http://203.18.159.115/STARGOLDSELECTHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",STARSPORTSSELECT2HD
-http://203.18.159.115/STARSPORTSSELECT2HD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ENTERR10
-http://203.18.159.115/ENTERR10/video.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",HISTORYTVHD
-http://203.18.159.115/HISTORYTVHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",BBCEARTHHD
-http://203.18.159.115/BBCEARTHHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",CHANNEL24
-http://203.18.159.115/CHANNEL24/video.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",INDEPENDENTTV
-http://203.18.159.115/INDEPENDENTTV/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ZEEBANGLACINEMA
-http://203.18.159.115/ZEEBANGLACINEMA/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",COLORSBANGLAHD
-http://203.18.159.115/COLORSBANGLAHD/video.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ZING
-http://203.18.159.115/ZING/index.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",ZEEBANGLAHD
-http://203.18.159.115/ZEEBANGLAHD/video.m3u8
-
-#EXTINF:-1 group-title="ASIM_ULTRA_DEEP",BALBHARAT
-http://203.18.159.115/BALBHARAT/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/8rrwkhh/Zee-bangla-hd.png" group-title="ASIM_HD",ZEEBANGLAHD
+http://203.18.159.115/ZEEBANGLAHD/index.m3u8
 
