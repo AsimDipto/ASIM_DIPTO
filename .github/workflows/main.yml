@@ -1,13 +1,15 @@
-name: IPTV Turbo Scanner
+name: IPTV Ultra-Fast Auto Update
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *' # প্রতি ১৫ মিনিট পর পর অটোমেটিক চলবে
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # আপনার ৪0৩ এরর সমাধানের আসল চাবিকাঠি
+      contents: write # ৪0৩ এরর সমাধানের জন্য মাস্ট
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -20,13 +22,13 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Run Fast Scanner
+      - name: Run Deep Scanner
         run: python scanner.py
 
-      - name: Commit and Push Results
+      - name: Commit and Push Update
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add only_new_channels.m3u
-          git commit -m "Turbo scan complete" || echo "No new channels found"
+          git commit -m "Auto Update: $(date)" || echo "No changes to commit"
           git push
