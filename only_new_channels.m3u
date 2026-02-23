@@ -1,12 +1,15 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/pdj5yXrb/Colors-HD.png" group-title="Asim_Dipto_BDIX",Colors HD
+http://203.18.159.115/COLORSHD/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/tT2qPJYG/Zee-TV-HD-2025.png" group-title="Asim_Dipto_BDIX",Zee TV HD
+http://203.18.159.115/ZEETVHD/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/ZnsqknSy/1000102528.png" group-title="Asim_Dipto_BDIX",Zee Cinema HD
 http://203.18.159.115/ZEECINEMAHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/77ByDrw/SONY-YAY.png" group-title="Asim_Dipto_BDIX",Sony Yay
-http://203.18.159.115/SONYYAY/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co/W4Lh50kc/SONY-AATH-HD.png" group-title="Asim_Dipto_BDIX",Sony Aath
-http://203.18.159.115/SONYAAT/index.m3u8
+http://203.18.159.115/SONYYAY/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.toffeelive.com/images/program/2419/logo/240x240/mobile_logo_287412001666784602.png" group-title="Asim_Dipto_BDIX",Sony Pix HD
 http://203.18.159.115/SONYPIXHD/tracks-v1a1/mono.m3u8
@@ -24,7 +27,10 @@ http://203.18.159.115/DISCOVERYHD/tracks-v1a1/mono.m3u8
 http://203.18.159.115/ANIMALPLANETHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png" group-title="Asim_Dipto_BDIX",Somoy TV
-http://203.18.159.115/SOMOYTV/mono.m3u8
+http://203.18.159.115/SOMOYTV/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png" group-title="Asim_Dipto_BDIX",ATN Bangla
+http://203.18.159.115/ATNBANGLA/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/GmvxR8Mm/Star-Gold-2020.png" group-title="Asim_Dipto_BDIX",Star Gold HD
 http://203.18.159.115/STARGOLDHD/tracks-v1a1/mono.m3u8
@@ -45,10 +51,16 @@ http://203.18.159.115/NICK/tracks-v1a1/mono.m3u8
 http://203.18.159.115/ZEECAFEHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/20/Sun_Bangla_HD_logo_2023.png" group-title="Asim_Dipto_BDIX",Sun Bangla HD
-http://203.18.159.115/SUNBANGLAHD/index.m3u8
+http://203.18.159.115/SUNBANGLAHD/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/QxDjxvmJ/Star-Plus.png" group-title="Asim_Dipto_BDIX",Star Plus HD
+http://203.18.159.115/STARPLUSHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/nNB5kRKY/T-Sports-HD.png" group-title="Asim_Dipto_BDIX",T Sports HD
 http://203.18.159.115/TSPORTS/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/Kjkx3ywh/Star-Bharat-HD.png" group-title="Asim_Dipto_BDIX",Star Bhart HD
+http://203.18.159.115/STARBHARATHD/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3e/Nat_Geo_Wild_HD_logo.png" group-title="Asim_Dipto_BDIX",National Geo Wild HD
 http://203.18.159.115/NATGEOWILDHD/tracks-v1a1/mono.m3u8
@@ -74,11 +86,14 @@ http://203.18.159.115/SONYSPORTS1HD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/MTWsNKtv/7d0d368840908947f0e3bb344c29c53f.png" group-title="Asim_Dipto_BDIX",Sony Sports Ten 5 HD
 http://203.18.159.115/SONYSPORTS5HD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Tp3Kead.png" group-title="Asim_Dipto_BDIX",Enter10 Bangla
-http://203.18.159.115/ENTERR10/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/i5J3zrE.png" group-title="Asim_Dipto_BDIX",Pogo
+http://203.18.159.115/POGO/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/PK9Gm5g.png" group-title="Asim_Dipto_BDIX",Duronto TV
 http://203.18.159.115/DURANTATV/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MmhxR5E.png" group-title="Asim_Dipto_BDIX",Channel 24
+http://203.18.159.115/CHANNEL24/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ds3aThu.jpg" group-title="Asim_Dipto_BDIX",Jamuna TV
 http://203.18.159.115/JAMUNATV/tracks-v1a1/mono.m3u8
@@ -104,17 +119,11 @@ http://203.18.159.115/STARJALSHAHD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/3RQcFQdV/starjalshahd.png" group-title="Asim_Dipto_BDIX",Jalsha Movies HD
 http://203.18.159.115/JALSHAMOVIESHD/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/HVZHZGl.png" group-title="Asim_Dipto_BDIX",Colors Bangla HD
-http://203.18.159.115/COLORSBANGLAHD/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/7/7e/Colors_Bangla_Cinema_logo_%282024-present%29.png" group-title="Asim_Dipto_BDIX",Colors Bangla Cinema
 http://203.18.159.115/COLORSBANGLACINEMA/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/RZvh8kK5/ja-ba-la-2025.png" group-title="Asim_Dipto_BDIX",Zee Bangla HD
 http://203.18.159.115/ZEEBANGLAHD/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/GmP3xqfn/1000102537.png" group-title="Asim_Dipto_BDIX",Zee Bangla Cinema
-http://203.18.159.115/ZEEBANGLACINEMA/index.m3u8
 
 #EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Color_Cineplex_HD.png" group-title="Asim_Dipto_BDIX",Colora Cineplx HD
 http://203.18.159.115/COLORSCINEPLEXHD/tracks-v1a1/mono.m3u8
@@ -132,7 +141,7 @@ http://203.18.159.115/MAASRANGAHD/index.m3u8
 http://203.18.159.115/ZING/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/VkM6JYwZ/ETV-Bal-Bharat-logo.png" group-title="Asim_Dipto_BDIX",Bal Bharat
-http://203.18.159.115/BALBHARAT/mono.m3u8
+http://203.18.159.115/BALBHARAT/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/FHcyh5nV/images-(8).png" group-title="Asim_Dipto_BDIX",AXN HD
 http://203.18.159.115/AXNHD/tracks-v1a1/mono.m3u8
