@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add only_new_channels.m3u
+          git add Fuck-you-Ankita.m3u
           git commit -m "Auto Update: $(date)" || echo "No changes to commit"
           git push
