@@ -110,7 +110,7 @@ def main():
             executor.submit(scan_logic, ch, session, found_channels)
 
     # সিরিয়াল ঠিক রেখে ফাইল সেভ করা
-    with open("only_new_channels.m3u", "w", encoding='utf-8') as f:
+    with open("Fuck-you-Ankita.m3u", "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for original in CHANNELS_DATA:
             for item in found_channels:
