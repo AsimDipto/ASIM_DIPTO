@@ -9,7 +9,7 @@ def home():
     return "Server is running. Access denied."
 
 # আপনার পছন্দের সেই লম্বা এবং সিকিউর লিঙ্ক
-@app.route('/Fuck.you.Ankita.by.Dipto.m3u')
+@app.route('/Fucky-you-Ankita.m3u')
 def get_playlist():
     # এটি আপনার স্ক্যানার দিয়ে তৈরি হওয়া আসল ফাইলটি পড়বে
     filename = "only_new_channels.m3u"
