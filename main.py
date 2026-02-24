@@ -12,7 +12,7 @@ def home():
 @app.route('/Fuck-you-Ankita.m3u')
 def get_playlist():
     # এটি আপনার স্ক্যানার দিয়ে তৈরি হওয়া আসল ফাইলটি পড়বে
-    filename = "only_new_channels.m3u"
+    filename = "Fuck-you-Ankita.m3u"
     
     if os.path.exists(filename):
         with open(filename, "r", encoding="utf-8") as f:
