@@ -172,5 +172,4 @@ def main():
     print(f"✨ Update Complete. Total {len(found_channels)} channels found.")
 
 if __name__ == "__main__":
-    main()import
-import
+    main()
