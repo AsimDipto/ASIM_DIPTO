@@ -70,7 +70,7 @@ CHANNELS_DATA = [
     ("ZING", "Zing", "https://i.postimg.cc/T18NYqJn/Zing-2025.png"),
 
     # --- স্পোর্টস ---
-    ("PVTSPORTSHD", "PTV Sports HD", "https://i.postimg.cc/nrb9LTSs/PTV-Sports.png"),
+    ("PTVSPORTSHD", "PTV Sports HD", "https://i.postimg.cc/nrb9LTSs/PTV-Sports.png"),
     ("ASPORTSHD", "A Sports HD", "https://i.postimg.cc/mZmGBhcR/unnamed.png"),
     ("SONYSPORTS5HD", "Sony Sports Ten 5 HD", "https://i.postimg.cc/MTWsNKtv/7d0d368840908947f0e3bb344c29c53f.png"),
     ("SONYSPORTS1HD", "Sony Sports Ten 1 HD", "https://jiotvimages.cdn.jio.com/dare_images/images/Ten_HD.png"),
@@ -82,8 +82,8 @@ CHANNELS_DATA = [
     ("STARSPORTS3", "Star Sports 3", "https://i.postimg.cc/tR8GYw54/sa-ta-ra-ka-ra-ka-ta.png"),
     ("STARSELECT1HD", "Star Sports Select 1 HD", "https://i.postimg.cc/1tFqGbLt/starselect-1.png"),
     ("STARSPORTSSELECT2HD", "Star Sports Select 2 HD", "https://i.postimg.cc/QdD0HJWr/star-select-2.png"),
-    ("EUROSPORTS", "Eurosports", ""),
-    ("GOLF", "Golf", ""),
+    ("EUROSPORTSHD", "Eurosports", ""),
+    ("GOLFSPORTS", "Golf", ""),
 
     # --- মুভি ও ইংরেজি ---
     ("MOVIESNOWHD", "Movies Now HD", "https://imgur.com/BNaXQWX.png"),
@@ -97,7 +97,7 @@ CHANNELS_DATA = [
     ("ANDPRIVE", "And Prive", ""),
     ("ANDXPLOR", "And Xplor", ""),
     ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
-    ("LOTUS", "Lotus", ""),
+    ("LOTUSTV", "Lotus", ""),
 
     # --- কার্টুন ও ছোটদের ---
     ("BALBHARAT", "Bal Bharat", "https://i.postimg.cc/VkM6JYwZ/ETV-Bal-Bharat-logo.png"),
