@@ -97,7 +97,7 @@ CHANNELS_DATA = [
     ("ANDPRIVE", "And Prive", ""),
     ("ANDXPLOR", "And Xplor", ""),
     ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
-    ("LOTUSTV", "Lotus", ""),
+    ("LOTUSTV", "Lotus", "https://i.postimg.cc/76jX98xH/Lotus-TV-Macau-logo.jpg"),
 
     # --- কার্টুন ও ছোটদের ---
     ("BALBHARAT", "Bal Bharat", "https://i.postimg.cc/VkM6JYwZ/ETV-Bal-Bharat-logo.png"),
@@ -172,4 +172,4 @@ def main():
     print(f"✨ Update Complete. Total {len(found_channels)} channels found.")
 
 if __name__ == "__main__":
-    main()
+    main()import
