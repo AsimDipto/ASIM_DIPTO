@@ -93,7 +93,7 @@ CHANNELS_DATA = [
     ("SONYPIXHD", "Sony Pix HD", "https://images.toffeelive.com/images/program/2419/logo/240x240/mobile_logo_287412001666784602.png"),
     ("ZEECAFEHD", "Zee Cafe HD", "https://i.postimg.cc/k46VnWTv/Zee-Cafe-2025.png"),
     ("ANDPICTURES", "And Pictures", ""),
-    ("ANDFLIX", "And Flix", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-hd-in.png"),
+    ("ANDFLIX", "And Flix", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-in.png"),
     ("ANDPRIVE", "And Prive", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prive-hd-in.png"),
     ("ANDXPLOR", "And Xplor", ""),
     ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
