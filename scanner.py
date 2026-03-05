@@ -83,7 +83,7 @@ CHANNELS_DATA = [
     ("STARSELECT1HD", "Star Sports Select 1 HD", "https://i.postimg.cc/1tFqGbLt/starselect-1.png"),
     ("STARSPORTSSELECT2HD", "Star Sports Select 2 HD", "https://i.postimg.cc/QdD0HJWr/star-select-2.png"),
     ("EUROSPORTSHD", "Eurosports", ""),
-    ("GOLFSPORTS", "Golf", ""),
+    ("GOLFSPORTS", "Golf", "https://i.postimg.cc/cHWfLx4z/download-(1).jpg"),
 
     # --- মুভি ও ইংরেজি ---
     ("MOVIESNOWHD", "Movies Now HD", "https://imgur.com/BNaXQWX.png"),
