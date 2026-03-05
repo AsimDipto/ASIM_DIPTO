@@ -82,7 +82,7 @@ CHANNELS_DATA = [
     ("STARSPORTS3", "Star Sports 3", "https://i.postimg.cc/tR8GYw54/sa-ta-ra-ka-ra-ka-ta.png"),
     ("STARSELECT1HD", "Star Sports Select 1 HD", "https://i.postimg.cc/1tFqGbLt/starselect-1.png"),
     ("STARSPORTSSELECT2HD", "Star Sports Select 2 HD", "https://i.postimg.cc/QdD0HJWr/star-select-2.png"),
-    ("EUROSPORTSHD", "Eurosports", ""),
+    ("EUROSPORTSHD", "Eurosports", "https://i.postimg.cc/hGWd2DxW/Eurosport-Logo-2015.png"),
     ("GOLFSPORTS", "Golf", "https://i.postimg.cc/cHWfLx4z/download-(1).jpg"),
 
     # --- মুভি ও ইংরেজি ---
@@ -173,3 +173,4 @@ def main():
 
 if __name__ == "__main__":
     main()import
+import
