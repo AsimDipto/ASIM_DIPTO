@@ -27,7 +27,7 @@ CHANNELS_DATA = [
     ("INDEPENDENTTV", "Independent TV", "https://i.imgur.com/kviJN1i.png"),
     ("SOMOYTV", "Somoy TV", "https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png"),
     ("MAASRANGAHD", "Maasranga HD", "https://i.postimg.cc/GmFLcvNB/Maasranga-Television-Logo.jpg"),
-    ("GTV", "G TV", ""),
+    ("GTV", "G TV", "https://i.postimg.cc/s2qpdYbJ/Logo-of-GTV-(Bangladesh).png"),
     ("CHANNEL9", "Channel 9", ""),
     ("CHANNEL24", "Channel 24", "https://i.imgur.com/MmhxR5E.png"),
     ("SATV", "SA TV", ""),
