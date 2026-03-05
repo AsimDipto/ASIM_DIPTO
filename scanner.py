@@ -102,7 +102,7 @@ CHANNELS_DATA = [
     # --- কার্টুন ও ছোটদের ---
     ("BALBHARAT", "Bal Bharat", "https://i.postimg.cc/VkM6JYwZ/ETV-Bal-Bharat-logo.png"),
     ("HUNGAMA", "Hungama", "https://i.imgur.com/t0Ecro6.png"),
-    ("SUPERHUNGAMA", "Super Hungama", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/super-hungama-in.png")cdn.jio.com/dare_images/images/channel/3dd2e26ab832cfe736739b86d57d21e9.png"),
+    ("SUPERHUNGAMA", "Super Hungama", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/super-hungama-in.png"),
     ("NICKJR", "Nick Jr", "https://i.imgur.com/chT8xP5.png"),
     ("POGO", "Pogo", "https://i.imgur.com/i5J3zrE.png"),
     ("SONIC", "Sonic", "https://static.wikia.nocookie.net/logopedia/images/3/35/Nickelodeon_Sonic_logo_2019.png"),
