@@ -92,10 +92,10 @@ CHANNELS_DATA = [
     ("STARMOVIESSELECTHD", "Star Movies Select HD", "https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png"),
     ("SONYPIXHD", "Sony Pix HD", "https://images.toffeelive.com/images/program/2419/logo/240x240/mobile_logo_287412001666784602.png"),
     ("ZEECAFEHD", "Zee Cafe HD", "https://i.postimg.cc/k46VnWTv/Zee-Cafe-2025.png"),
-    ("ANDPICTURES", "And Pictures", ""),
-    ("ANDFLIX", "And Flix", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-in.png"),
-    ("ANDPRIVE", "And Prive", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prive-hd-in.png"),
-    ("ANDXPLOR", "And Xplor", ""),
+    ("ANDPICTURESHD", "And Pictures", ""),
+    ("ANDFLIXHD", "And Flix", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-in.png"),
+    ("ANDPRIVEHD", "And Prive", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prive-hd-in.png"),
+    ("ANDXPLORHD", "And Xplor", ""),
     ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
     ("LOTUSTV", "Lotus", "https://i.postimg.cc/76jX98xH/Lotus-TV-Macau-logo.jpg"),
 
@@ -140,7 +140,7 @@ def scan_logic(ch, session, results):
             url = f"{base_url}{variant}{sfx}"
             try:
                 # নিজেকে অরিজিনাল প্লেয়ার হিসেবে পরিচয় দেওয়া যাতে ব্লক না করে
-                headers = {'User-Agent': 'VLC/3.0.12 LibVLC/3.0.12'}
+                headers = {'User-Agent': 'VLANDANDXPLORHDHDIXHDLC/3.0.12'}
                 r = session.head(url, headers=headers, timeout=2.5, allow_redirects=True)
                 
                 if r.status_code == 200:
