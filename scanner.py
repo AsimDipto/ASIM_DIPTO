@@ -11,7 +11,7 @@ CHANNELS_DATA = [
     ("BTVCHOTTO", "BTV Chottogram", ""),
     ("BTVNEWS", "BTV News", ""),
     ("SANGSADTV", "Sangsad TV", ""),
-    ("ATNNEWS", "ATN News", ""),
+    ("ATNNEWS", "ATN News", "https://i.postimg.cc/9fqFNKZ0/ATN-News-Logo-without-slogan-svg.png"),
     ("BANGLAVISION", "Banglavision", ""),
     ("NTV", "N TV", ""),
     ("CHANNELI", "Channel I", ""),
@@ -86,17 +86,18 @@ CHANNELS_DATA = [
     ("GOLFSPORTS", "Golf", "https://i.postimg.cc/cHWfLx4z/download-(1).jpg"),
 
     # --- মুভি ও ইংরেজি ---
-    ("MOVIESNOWHD", "Movies Now HD", "https://imgur.com/BNaXQWX.png"),
+    ("MOVIESNOWHD", "Movies Now HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/movies-now-hd-in.png"),
     ("ZEEACTION", "Zee Action", ""),
     ("STARMOVIESHD", "Star Movies HD", "https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png"),
     ("STARMOVIESSELECTHD", "Star Movies Select HD", "https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png"),
     ("SONYPIXHD", "Sony Pix HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-pix-hd-in.png"),
     ("ZEECAFEHD", "Zee Cafe HD", "https://i.postimg.cc/k46VnWTv/Zee-Cafe-2025.png"),
-    ("ANDPICTURSHD", "And Picturs HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prictures-hd-in.png"),
+    ("ANDPICTURSHD", "And Picturs HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-pictures-hd-in.png"),
     ("ANDFLIXHD", "And Flix HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-hd-in.png"),
     ("ANDPRIVEHD", "And Prive HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prive-hd-in.png"),
     ("ANDXPLORE", "And Xplor HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-xplore-hd-in.png"),
     ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
+    ("MNXHD", " MNX HD, "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/mnx-hd-in.png”),
     ("LOTUSTV", "Lotus", "https://i.postimg.cc/gkG4DPRS/Lotus-TV-Macau-logo.jpg"),
 
     # --- কার্টুন ও ছোটদের ---
