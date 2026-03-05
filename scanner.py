@@ -97,7 +97,7 @@ CHANNELS_DATA = [
     ("ANDPRIVEHD", "And Prive HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prive-hd-in.png"),
     ("ANDXPLORE", "And Xplor HD", "https://i.postimg.cc/m2tDHPkH/1000108158.png"),
     ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
-    ("MNXHD", "MNX HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/mnx-hd-in.png”),
+    ("MNXHD", "MNX HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/mnx-hd-in.png"),
     ("LOTUSTV", "Lotus", "https://i.postimg.cc/gkG4DPRS/Lotus-TV-Macau-logo.jpg"),
 
     # --- কার্টুন ও ছোটদের ---
@@ -143,7 +143,8 @@ def scan_logic(ch, session, results):
                 headers = {'User-Agent': 'VLANDANDXPLORHDHDIXHDLC/3.0.12'}
                 r = session.head(url, headers=headers, timeout=2.5, allow_redirects=True)
                 
-                if r.sta           results.append((display_name, url, logo_url))
+                if r.status_code == 200:
+                    results.append((display_name, url, logo_url))
                     print(f"✅ Found: {display_name}")
                     return # সচল লিঙ্ক পাওয়া গেলে পরের ভ্যারিয়েন্টে যাবে না
             except:
