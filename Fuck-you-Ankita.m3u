@@ -1,21 +1,27 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/9fqFNKZ0/ATN-News-Logo-without-slogan-svg.png" group-title="Asim_Dipto BDIX",ATN News
-http://203.18.159.115/ATNNEWS/playlist.m3u8
+http://203.18.159.115/ATNNEWS/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Asim_Dipto BDIX",Channel I
+http://203.18.159.115/CHANNELI/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png" group-title="Asim_Dipto BDIX",ATN Bangla
-http://203.18.159.115/ATNBANGLA/mono.m3u8
+http://203.18.159.115/ATNBANGLA/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/kviJN1i.png" group-title="Asim_Dipto BDIX",Independent TV
-http://203.18.159.115/INDEPENDENTTV/tracks-v1a1/mono.m3u8
+http://203.18.159.115/INDEPENDENTTV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png" group-title="Asim_Dipto BDIX",Somoy TV
 http://203.18.159.115/SOMOYTV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/GmFLcvNB/Maasranga-Television-Logo.jpg" group-title="Asim_Dipto BDIX",Maasranga HD
-http://203.18.159.115/MAASRANGAHD/mono.m3u8
+http://203.18.159.115/MAASRANGAHD/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/s2qpdYbJ/Logo-of-GTV-(Bangladesh).png" group-title="Asim_Dipto BDIX",G TV
-http://203.18.159.115/GTV/index.m3u8
+http://203.18.159.115/GTV/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MmhxR5E.png" group-title="Asim_Dipto BDIX",Channel 24
+http://203.18.159.115/CHANNEL24/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ds3aThu.jpg" group-title="Asim_Dipto BDIX",Jamuna TV
 http://203.18.159.115/JAMUNATV/tracks-v1a1/mono.m3u8
@@ -48,7 +54,7 @@ http://203.18.159.115/STARJALSHAHD/tracks-v1a1/mono.m3u8
 http://203.18.159.115/ZEEBANGLAHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Tp3Kead.png" group-title="Asim_Dipto BDIX",Enter10 Bangla
-http://203.18.159.115/ENTERR10/mono.m3u8
+http://203.18.159.115/ENTERR10/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/77ByDrw/SONY-YAY.png" group-title="Asim_Dipto BDIX",Sony Yay
 http://203.18.159.115/SONYYAY/mono.m3u8
@@ -57,13 +63,16 @@ http://203.18.159.115/SONYYAY/mono.m3u8
 http://203.18.159.115/TSPORTS/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/20/Sun_Bangla_HD_logo_2023.png" group-title="Asim_Dipto BDIX",Sun Bangla HD
-http://203.18.159.115/SUNBANGLAHD/mono.m3u8
+http://203.18.159.115/SUNBANGLAHD/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/pdj5yXrb/Colors-HD.png" group-title="Asim_Dipto BDIX",Colors HD
+http://203.18.159.115/COLORSHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Color_Cineplex_HD.png" group-title="Asim_Dipto BDIX",Colors Cineplex HD
 http://203.18.159.115/COLORSCINEPLEXHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/QxDjxvmJ/Star-Plus.png" group-title="Asim_Dipto BDIX",Star Plus HD
-http://203.18.159.115/STARPLUSHD/index.m3u8
+http://203.18.159.115/STARPLUSHD/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/GmvxR8Mm/Star-Gold-2020.png" group-title="Asim_Dipto BDIX",Star Gold HD
 http://203.18.159.115/STARGOLDHD/tracks-v1a1/mono.m3u8
@@ -75,7 +84,7 @@ http://203.18.159.115/STARGOLDSELECTHD/tracks-v1a1/mono.m3u8
 http://203.18.159.115/STARBHARATHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/GhjBKLV8/SETHD.png" group-title="Asim_Dipto BDIX",Sony Entertainment TV HD
-http://203.18.159.115/SONYENTHD/tracks-v1a1/mono.m3u8
+http://203.18.159.115/SONYENTHD/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/qqbPBCgB/Sony-max-hd.png" group-title="Asim_Dipto BDIX",Sony Max
 http://203.18.159.115/SONYMAXHD/tracks-v1a1/mono.m3u8
@@ -144,10 +153,10 @@ http://203.18.159.115/STARMOVIESSELECTHD/tracks-v1a1/mono.m3u8
 http://203.18.159.115/SONYPIXHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/k46VnWTv/Zee-Cafe-2025.png" group-title="Asim_Dipto BDIX",Zee Cafe HD
-http://203.18.159.115/ZEECAFEHD/mono.m3u8
+http://203.18.159.115/ZEECAFEHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-pictures-hd-in.png" group-title="Asim_Dipto BDIX",And Picturs HD
-http://203.18.159.115/ANDPICTURSHD/tracks-v1a1/mono.m3u8
+http://203.18.159.115/ANDPICTURSHD/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-hd-in.png" group-title="Asim_Dipto BDIX",And Flix HD
 http://203.18.159.115/ANDFLIXHD/tracks-v1a1/mono.m3u8
@@ -165,10 +174,10 @@ http://203.18.159.115/AXNHD/tracks-v1a1/mono.m3u8
 http://203.18.159.115/MNXHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/gkG4DPRS/Lotus-TV-Macau-logo.jpg" group-title="Asim_Dipto BDIX",Lotus
-http://203.18.159.115/LOTUSTV/mono.m3u8
+http://203.18.159.115/LOTUSTV/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/VkM6JYwZ/ETV-Bal-Bharat-logo.png" group-title="Asim_Dipto BDIX",Bal Bharat
-http://203.18.159.115/BALBHARAT/index.m3u8
+http://203.18.159.115/BALBHARAT/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/t0Ecro6.png" group-title="Asim_Dipto BDIX",Hungama
 http://203.18.159.115/HUNGAMA/tracks-v1a1/mono.m3u8
@@ -177,13 +186,16 @@ http://203.18.159.115/HUNGAMA/tracks-v1a1/mono.m3u8
 http://203.18.159.115/SUPERHUNGAMA/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/chT8xP5.png" group-title="Asim_Dipto BDIX",Nick Jr
-http://203.18.159.115/NICKJR/mono.m3u8
+http://203.18.159.115/NICKJR/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/i5J3zrE.png" group-title="Asim_Dipto BDIX",Pogo
-http://203.18.159.115/POGO/tracks-v1a1/mono.m3u8
+http://203.18.159.115/POGO/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/35/Nickelodeon_Sonic_logo_2019.png" group-title="Asim_Dipto BDIX",Sonic
 http://203.18.159.115/SONIC/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/telelibrary/images/c/cb/Cartoon_Network_HD%2B_-_logo.png" group-title="Asim_Dipto BDIX",Cartoon Network HD
+http://203.18.159.115/CARTOONNETWORK/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/6psvT4dX/Animal-Planet-HD-282018-n-v-29.png" group-title="Asim_Dipto BDIX",Animal Planet HD
 http://203.18.159.115/ANIMALPLANETHD/tracks-v1a1/mono.m3u8
