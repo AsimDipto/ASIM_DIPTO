@@ -9,34 +9,34 @@ http://203.18.159.115/INDEPENDENTTV/tracks-v1a1/mono.m3u8
 http://203.18.159.115/SOMOYTV/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/GmFLcvNB/Maasranga-Television-Logo.jpg" group-title="Asim_Dipto BDIX",Maasranga HD
-http://203.18.159.115/MAASRANGAHD/mono.m3u8
+http://203.18.159.115/MAASRANGAHD/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ds3aThu.jpg" group-title="Asim_Dipto BDIX",Jamuna TV
 http://203.18.159.115/JAMUNATV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/GmP3xqfn/1000102537.png" group-title="Asim_Dipto BDIX",Zee Bangla Cinema
-http://203.18.159.115/ZEEBANGLACINEMA/index.m3u8
+http://203.18.159.115/ZEEBANGLACINEMA/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/77ByDrw/SONY-YAY.png" group-title="Asim_Dipto BDIX",Sony Yay
 http://203.18.159.115/SONYYAY/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/20/Sun_Bangla_HD_logo_2023.png" group-title="Asim_Dipto BDIX",Sun Bangla HD
-http://203.18.159.115/SUNBANGLAHD/mono.m3u8
+http://203.18.159.115/SUNBANGLAHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/zoom-in.png" group-title="Asim_Dipto BDIX",Zoom
 http://203.18.159.115/ZOOM/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/T18NYqJn/Zing-2025.png" group-title="Asim_Dipto BDIX",Zing
-http://203.18.159.115/ZING/mono.m3u8
+http://203.18.159.115/ZING/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/cHWfLx4z/download-(1).jpg" group-title="Asim_Dipto BDIX",Golf
-http://203.18.159.115/GOLFSPORTS/mono.m3u8
+http://203.18.159.115/GOLFSPORTS/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/FHcyh5nV/images-(8).png" group-title="Asim_Dipto BDIX",AXN HD
 http://203.18.159.115/AXNHD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/gkG4DPRS/Lotus-TV-Macau-logo.jpg" group-title="Asim_Dipto BDIX",Lotus
-http://203.18.159.115/LOTUSTV/mono.m3u8
+http://203.18.159.115/LOTUSTV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ELjuMyU.png" group-title="Asim_Dipto BDIX",TLC HD
 http://203.18.159.115/TLCHD/tracks-v1a1/mono.m3u8
