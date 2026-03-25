@@ -71,9 +71,9 @@ CHANNELS_DATA = [
     ("starsports1", "Star Sports 1 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-sports-1-in.png"),
     ("starsports2", "Star Sports 2", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-sports-2-in.png"),
     ("sonyten1", "Sony Ten 1 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-1-hd-in.png"),
-    ("sonyten2", "Sony Ten 2 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png"),
+    ("sonyten", "Sony Ten 2 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png"),
     ("sonyten3", "Sony Ten 3 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-3-hd-in.png"),
-    ("sonyten5", "Sony Ten 5 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-5-hd-in.png"),
+    ("sonyten5", "Sony Ten 5 HD", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/1200px-Star_Sports_1_HD.png"),
     ("sports18", "Sports 18 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sports-18-in.png"),
     ("ptvsports", "PTV Sports HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/ptv-sports-in.png"),
 
@@ -87,8 +87,8 @@ CHANNELS_DATA = [
     ("zeecafe", "Zee Cafe HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/zee-cafe-hd-in.png"),
 
     # --- Infotainment & Kids ---
-    ("discovery", "Discovery HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/discovery-kids-in.png"),
-    ("natgeo", "Nat Geo HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/dd-india-hd-in.png"), # Replacement
+    ("discovery", "Discovery HD", "https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png"),
+    ("natgeo", "Nat Geo HD", "https://i.postimg.cc/MKVttQbr/national-geographic-hd.png"),
     ("historytv18", "History TV18 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/history-tv18-hd-in.png"),
     ("sonybbcearth", "Sony BBC Earth HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-bbc-earth-hd-in.png"),
     ("nick", "Nick HD+", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/nick-hd-plus-in.png"),
