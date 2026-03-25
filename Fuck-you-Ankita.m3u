@@ -1,1 +1,64 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="",BTV
+http://stvlive.net:8080/btv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Banglavision
+http://stvlive.net:8080/banglavision/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",N TV
+http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Channel I
+http://stvlive.net:8080/channeli/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png",ATN Bangla
+http://stvlive.net:8080/atnbangla/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Movie Bangla
+http://stvlive.net:8080/moviebangla/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MmhxR5E.png",Channel 24
+http://stvlive.net:8080/channel24/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/3RQcFQdV/starjalshahd.png",Jalsha Movies HD
+http://stvlive.net:8080/jalshamovies/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/star-jalsha-hd-in.png",Star Jalsha HD
+http://stvlive.net:8080/starjalsha/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/zee-bangla-hd-in.png",Zee Bangla HD
+http://stvlive.net:8080/zeebangla/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/pdj5yXrb/Colors-HD.png",Colors HD
+http://stvlive.net:8080/colorshd/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/QxDjxvmJ/Star-Plus.png",Star Plus HD
+http://stvlive.net:8080/starplus/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/GmvxR8Mm/Star-Gold-2020.png",Star Gold HD
+http://stvlive.net:8080/stargold/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/qqbPBCgB/Sony-max-hd.png",Sony Max
+http://stvlive.net:8080/sonymax/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/tT2qPJYG/Zee-TV-HD-2025.png",Zee TV HD
+http://stvlive.net:8080/zeetv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ac/Star_Sports_2.jpg",Star Sports 2 HD
+http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/1tFqGbLt/starselect-1.png",Star Sports Select 1 HD
+http://stvlive.net:8080/starselect1/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png",Star Movies HD
+http://stvlive.net:8080/starmovies/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/6psvT4dX/Animal-Planet-HD-282018-n-v-29.png",Animal Planet HD
+http://stvlive.net:8080/animalplanet/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png",Discovery HD
+http://stvlive.net:8080/discovery/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/MKVttQbr/national-geographic-hd.png",National Geographic HD
+http://stvlive.net:8080/natgeo/tracks-v1a1/mono.m3u8
+
