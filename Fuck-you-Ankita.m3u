@@ -68,18 +68,15 @@ http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-1-hd-in.png",Sony Ten 1 HD
 http://stvlive.net:8080/sonyten1/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png",Sony Ten 2 HD
-http://stvlive.net:8080/sonyten2/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-5-hd-in.png",Sony Ten 5 HD
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/1200px-Star_Sports_1_HD.png",Sony Ten 5 HD
 http://stvlive.net:8080/sonyten5/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-movies-hd-in.png",Star Movies HD
 http://stvlive.net:8080/starmovies/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/discovery-kids-in.png",Discovery HD
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png",Discovery HD
 http://stvlive.net:8080/discovery/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/dd-india-hd-in.png",Nat Geo HD
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/MKVttQbr/national-geographic-hd.png",Nat Geo HD
 http://stvlive.net:8080/natgeo/tracks-v1a1/mono.m3u8
 
