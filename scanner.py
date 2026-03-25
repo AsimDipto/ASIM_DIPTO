@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 # ১. সার্ভার ইউআরএল (Port shoho)
 base_url = "http://stvlive.net:8080/"
 
-# ২. আপনার দেওয়া সকল চ্যানেলের পূর্ণাঙ্গ ডাটা (১০৩টি চ্যানেল)
+# ২. আপনার দেওয়া সকল চ্যানেলের পূর্ণাঙ্গ ডাটা
 CHANNELS_DATA = [
     # --- জাতীয় ও সাধারণ বিনোদন ---
     ("BTV", "BTV", ""),
@@ -44,84 +44,62 @@ CHANNELS_DATA = [
 
     # --- কলকাতা ও মুভি ---
     ("JALSHAMOVIESHD", "Jalsha Movies HD", "https://i.postimg.cc/3RQcFQdV/starjalshahd.png"),
-    ("COLORSBANGLACINEMA", "Colors Bangla Cinema", "https://static.wikia.nocookie.net/etv-gspn-bangla/images/7/7e/Colors_Bangla_Cinema_logo_%282024-present%29.png"),
-    ("ZEEBANGLACINEMA", "Zee Bangla Cinema", "https://i.postimg.cc/GmP3xqfn/1000102537.png"),
-    ("COLORSBANGLAHD", "Colors Bangla HD", "https://i.imgur.com/HVZHZGl.png"),
-    ("SONYAAT", "Sony Aath", "https://i.ibb.co/W4Lh50kc/SONY-AATH-HD.png"),
-    ("STARJALSHAHD", "Star Jalsha HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/star-jalsha-hd-in.png"),
-    ("ZEEBANGLAHD", "Zee Bangla HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/zee-bangla-hd-in.png"),
-    ("ENTERR10", "Enter10 Bangla", "https://i.imgur.com/Tp3Kead.png"),
-    ("SONYYAY", "Sony Yay", "https://i.ibb.co/77ByDrw/SONY-YAY.png"),
-    ("TSPORTS", "T Sports HD", "https://i.ibb.co.com/nNB5kRKY/T-Sports-HD.png"),
-    ("SUNBANGLAHD", "Sun Bangla HD", "https://static.wikia.nocookie.net/logopedia/images/2/20/Sun_Bangla_HD_logo_2023.png"),
+    ("COLORSBANGLACINEMA", "Colors Bangla Cinema", ""),
+    ("ZEEBANGLACINEMA", "Zee Bangla Cinema", ""),
+    ("COLORSBANGLAHD", "Colors Bangla HD", ""),
+    ("SONYAAT", "Sony Aath", ""),
+    ("STARJALSHAHD", "Star Jalsha HD", ""),
+    ("ZEEBANGLAHD", "Zee Bangla HD", ""),
+    ("ENTERR10", "Enter10 Bangla", ""),
+    ("SONYYAY", "Sony Yay", ""),
+    ("TSPORTS", "T Sports HD", ""),
+    ("SUNBANGLAHD", "Sun Bangla HD", ""),
     ("AAKASHAATH", "Aakash Aath", ""),
 
     # --- হিন্দি এন্টারটেইনমেন্ট ---
-    ("COLORSHD", "Colors HD", "https://i.postimg.cc/pdj5yXrb/Colors-HD.png"),
-    ("COLORSCINEPLEXHD", "Colors Cineplex HD", "http://jiotv.catchup.cdn.jio.com/dare_images/images/Color_Cineplex_HD.png"),
-    ("STARPLUSHD", "Star Plus HD", "https://i.postimg.cc/QxDjxvmJ/Star-Plus.png"),
-    ("STARGOLDHD", "Star Gold HD", "https://i.postimg.cc/GmvxR8Mm/Star-Gold-2020.png"),
-    ("STARGOLDSELECTHD", "Star Gold Select HD", "https://i.postimg.cc/9fr8hF7f/1000102566.png"),
-    ("STARBHARATHD", "Star Bharat HD", "https://i.postimg.cc/Kjkx3ywh/Star-Bharat-HD.png"),
-    ("SONYENTHD", "Sony Entertainment TV HD", "https://i.postimg.cc/GhjBKLV8/SETHD.png"),
-    ("SONYMAXHD", "Sony Max", "https://i.postimg.cc/qqbPBCgB/Sony-max-hd.png"),
-    ("ZEETVHD", "Zee TV HD", "https://i.postimg.cc/tT2qPJYG/Zee-TV-HD-2025.png"),
-    ("ZOOM", "Zoom", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/zoom-in.png"),
-    ("ZING", "Zing", "https://i.postimg.cc/T18NYqJn/Zing-2025.png"),
+    ("COLORSHD", "Colors HD", ""),
+    ("COLORSCINEPLEXHD", "Colors Cineplex HD", ""),
+    ("STARPLUSHD", "Star Plus HD", ""),
+    ("STARGOLDHD", "Star Gold HD", ""),
+    ("STARGOLDSELECTHD", "Star Gold Select HD", ""),
+    ("STARBHARATHD", "Star Bharat HD", ""),
+    ("SONYENTHD", "Sony Entertainment TV HD", ""),
+    ("SONYMAXHD", "Sony Max", ""),
+    ("ZEETVHD", "Zee TV HD", ""),
+    ("ZOOM", "Zoom", ""),
+    ("ZING", "Zing", ""),
 
     # --- স্পোর্টস ---
-    ("PTVSPORTSHD", "PTV Sports HD", "https://i.postimg.cc/nrb9LTSs/PTV-Sports.png"),
-    ("ASPORTSHD", "A Sports HD", "https://i.postimg.cc/mZmGBhcR/unnamed.png"),
-    ("SONYSPORTS5HD", "Sony Sports Ten 5 HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-ten-5-hd-in.png"),
-    ("SONYSPORTS1HD", "Sony Sports Ten 1 HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-ten-1-hd-in.png"),
-    ("SONYSPORTS2HD", "Sony Sports Ten 2 HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-ten-2-hd-in.png"),
-    ("SONYSPORTS3", "Sony Sports Ten 3", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-ten-3-in.png"),
-    ("SONYSPORTS4", "Sony Sports Ten 4", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-ten-4-in.png"),
-    ("STARSPORTS1HD", "Star Sports 1 HD", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/1200px-Star_Sports_1_HD.png"),
-    ("STARSPORTS2HD", "Star Sports 2 HD", "https://static.wikia.nocookie.net/logopedia/images/a/ac/Star_Sports_2.jpg"),
-    ("STARSPORTS3", "Star Sports 3", "https://i.postimg.cc/tR8GYw54/sa-ta-ra-ka-ra-ka-ta.png"),
-    ("STARSELECT1HD", "Star Sports Select 1 HD", "https://i.postimg.cc/1tFqGbLt/starselect-1.png"),
-    ("STARSPORTSSELECT2HD", "Star Sports Select 2 HD", "https://i.postimg.cc/QdD0HJWr/star-select-2.png"),
-    ("EUROSPORTSHD", "Eurosports", "https://i.postimg.cc/hGWd2DxW/Eurosport-Logo-2015.png"),
-    ("GOLFSPORTS", "Golf", "https://i.postimg.cc/cHWfLx4z/download-(1).jpg"),
+    ("PTVSPORTSHD", "PTV Sports HD", ""),
+    ("ASPORTSHD", "A Sports HD", ""),
+    ("SONYSPORTS1HD", "Sony Sports Ten 1 HD", ""),
+    ("SONYSPORTS2HD", "Sony Sports Ten 2 HD", ""),
+    ("STARSPORTS1HD", "Star Sports 1 HD", ""),
+    ("STARSPORTS2HD", "Star Sports 2 HD", ""),
+    ("EUROSPORTSHD", "Eurosports", ""),
 
     # --- মুভি ও ইংরেজি ---
-    ("MOVIESNOWHD", "Movies Now HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/movies-now-hd-in.png"),
-    ("ZEEACTION", "Zee Action", ""),
-    ("STARMOVIESHD", "Star Movies HD", "https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png"),
-    ("STARMOVIESSELECTHD", "Star Movies Select HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/star-movies-select-hd-in.png"),
-    ("SONYPIXHD", "Sony Pix HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/sony-pix-hd-in.png"),
-    ("ZEECAFEHD", "Zee Cafe HD", "https://i.postimg.cc/k46VnWTv/Zee-Cafe-2025.png"),
-    ("ANDPICTURSHD", "And Picturs HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-pictures-hd-in.png"),
-    ("ANDFLIXHD", "And Flix HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-flix-hd-in.png"),
-    ("ANDPRIVEHD", "And Prive HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/and-prive-hd-in.png"),
-    ("ANDXPLORE", "And Xplor HD", "https://i.postimg.cc/m2tDHPkH/1000108158.png"),
-    ("AXNHD", "AXN HD", "https://i.postimg.cc/FHcyh5nV/images-(8).png"),
-    ("MNXHD", "MNX HD", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/mnx-hd-in.png"),
-    ("LOTUSTV", "Lotus", "https://i.postimg.cc/gkG4DPRS/Lotus-TV-Macau-logo.jpg"),
+    ("MOVIESNOWHD", "Movies Now HD", ""),
+    ("STARMOVIESHD", "Star Movies HD", ""),
+    ("SONYPIXHD", "Sony Pix HD", ""),
+    ("ZEECAFEHD", "Zee Cafe HD", ""),
+    ("ANDPICTURSHD", "And Pictures HD", ""),
+    ("ANDFLIXHD", "And Flix HD", ""),
 
-    # --- কার্টুন ও ছোটদের ---
-    ("BALBHARAT", "Bal Bharat", "https://i.postimg.cc/VkM6JYwZ/ETV-Bal-Bharat-logo.png"),
-    ("HUNGAMA", "Hungama", "https://i.imgur.com/t0Ecro6.png"),
-    ("SUPERHUNGAMA", "Super Hungama", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/super-hungama-in.png"),
-    ("NICKJR", "Nick Jr", "https://i.imgur.com/chT8xP5.png"),
-    ("POGO", "Pogo", "https://i.imgur.com/i5J3zrE.png"),
-    ("SONIC", "Sonic", "https://static.wikia.nocookie.net/logopedia/images/3/35/Nickelodeon_Sonic_logo_2019.png"),
-    ("CARTOONNETWORK", "Cartoon Network HD", "https://static.wikia.nocookie.net/telelibrary/images/c/cb/Cartoon_Network_HD%2B_-_logo.png"),
-
-    # --- ইনফোটেইনমেন্ট ---
-    ("ANIMALPLANETHD", "Animal Planet HD", "https://i.postimg.cc/6psvT4dX/Animal-Planet-HD-282018-n-v-29.png"),
-    ("DISCOVERYHD", "Discovery HD", "https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png"),
-    ("NATGEOHD", "National Geographic HD", "https://i.postimg.cc/MKVttQbr/national-geographic-hd.png"),
-    ("NATGEOWILDHD", "National Geo Wild HD", "https://upload.wikimedia.org/wikipedia/commons/3/3e/Nat_Geo_Wild_HD_logo.png"),
-    ("TLCHD", "TLC HD", "https://i.imgur.com/ELjuMyU.png"),
-    ("TRAVELXP", "Travel Xp", "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/travelxp-hd-in.png"),
-    ("SONYBBCEARTHHD", "Sony BBC Earth HD", "https://i.postimg.cc/qRMtW9KH/images-(4).jpg"),
-    ("HISTORYTVHD", "History TV HD", "https://i.postimg.cc/XJq5rpgc/History-tv18-hd.png"),
+    # --- কার্টুন ও ইনফোটেইনমেন্ট ---
+    ("HUNGAMA", "Hungama", ""),
+    ("POGO", "Pogo", ""),
+    ("NICKJR", "Nick Jr", ""),
+    ("CARTOONNETWORK", "Cartoon Network HD", ""),
+    ("ANIMALPLANETHD", "Animal Planet HD", ""),
+    ("DISCOVERYHD", "Discovery HD", ""),
+    ("NATGEOHD", "National Geographic HD", ""),
+    ("SONYBBCEARTHHD", "Sony BBC Earth HD", ""),
+    ("HISTORYTVHD", "History TV HD", ""),
     ("SONYEARTH", "Sony Earth", "")
 ]
 
-# ৩. সম্ভাব্য সাফিক্স
+# ৩. সম্ভাব্য সাফিক্স (Suffixes)
 POSSIBLE_SUFFIXES = [
     "/tracks-v1a1/mono.m3u8", 
     "/mono.m3u8", 
@@ -132,23 +110,31 @@ POSSIBLE_SUFFIXES = [
 def scan_logic(ch, session, results):
     ch_id, display_name, logo_url = ch
     
-    # ID ke small letters kora ebong "hd" thakle seta bad diyeo try kora
-    base_variant = ch_id.lower()
-    variants = [base_variant]
-    if "hd" in base_variant:
-        variants.append(base_variant.replace("hd", ""))
+    # Nam theke 'hd' ba 'tv' thakle seta muche die base name ber kora
+    clean_base = ch_id.lower().replace("hd", "").replace("tv", "")
     
+    # Apnar chawa 4-ti variants (Deep Scan)
+    # Jemon: deepto, deeptotv, deeptotvhd, deeptohd
+    variants = [
+        clean_base,               # deepto
+        clean_base + "tv",        # deeptotv
+        clean_base + "tvhd",      # deeptotvhd
+        clean_base + "hd"         # deeptohd
+    ]
+    
+    # Duplicate variant bad die check kora
     for variant in dict.fromkeys(variants):
         for sfx in POSSIBLE_SUFFIXES:
             url = f"{base_url}{variant}{sfx}"
             try:
+                # User-Agent VLC player set kora hoyeche
                 headers = {'User-Agent': 'VLC/3.0.12'}
-                r = session.head(url, headers=headers, timeout=3.0, allow_redirects=True)
+                r = session.head(url, headers=headers, timeout=2.5, allow_redirects=True)
                 
                 if r.status_code == 200:
                     results.append((display_name, url, logo_url))
-                    print(f"✅ Found: {variant}")
-                    return 
+                    print(f"✅ Found: {variant} ({display_name})")
+                    return # Link peye gele porer variant check dorkar nai
             except:
                 continue
 
@@ -156,24 +142,25 @@ def main():
     session = requests.Session()
     found_channels = []
 
-    print(f"🔍 Deep Scanning started on {base_url}...")
+    print(f"🔍 New Py Deep Scanning starting on {base_url}...")
 
-    # ২৫ জন 'শিকারী' একসাথে খুঁজবে যাতে দ্রুত শেষ হয়
-    with ThreadPoolExecutor(max_workers=25) as executor:
+    # fast scan-er jonno Thread count 30
+    with ThreadPoolExecutor(max_workers=30) as executor:
         for ch in CHANNELS_DATA:
             executor.submit(scan_logic, ch, session, found_channels)
 
-    # সিরিয়াল ঠিক রেখে ফাইল সেভ করা (group-title bad dewa hoyeche)
+    # Serial onujayi M3U file save
     output_file = "Fuck-you-Ankita.m3u"
     with open(output_file, "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for original in CHANNELS_DATA:
             for item in found_channels:
                 if item[0] == original[1]:
-                    # group-title parameter ti muche dewa hoyeche
+                    # group-title parameter ti bad dewa hoyeche
                     f.write(f'#EXTINF:-1 tvg-logo="{item[2]}",{item[0]}\n{item[1]}\n\n')
     
-    print(f"✨ Update Complete. Total {len(found_channels)} channels found. Saved as: {output_file}")
+    print(f"\n✨ Update Complete. Total {len(found_channels)} channels found.")
+    print(f"📁 File saved as: {output_file}")
 
 if __name__ == "__main__":
     main()
