@@ -1,76 +1,85 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/qM9nQpDk/btv.png",BTV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/btv-hd-bd.png",BTV HD
 http://stvlive.net:8080/btv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/7L46Z2q7/banglavision.png",Banglavision
-http://stvlive.net:8080/banglavision/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/zX30tN0v/ntv.png",N TV
-http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/NjZ3x3K7/channel-i.png",Channel I
-http://stvlive.net:8080/channeli/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png",ATN Bangla
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/atn-bangla-hd-bd.png",ATN Bangla HD
 http://stvlive.net:8080/atnbangla/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="",Movie Bangla
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/channel-i-hd-bd.png",Channel I HD
+http://stvlive.net:8080/channeli/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/n-tv-hd-bd.png",N TV HD
+http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/banglavision-hd-bd.png",Banglavision HD
+http://stvlive.net:8080/banglavision/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/movie-bangla-tv-bd.png",Movie Bangla
 http://stvlive.net:8080/moviebangla/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/kviJN1i.png",Independent TV
-http://stvlive.net:8080/independent/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png",Somoy TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/somoy-bd.png",Somoy News
 http://stvlive.net:8080/somoy/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MmhxR5E.png",Channel 24
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/independent-bd.png",Independent TV
+http://stvlive.net:8080/independent/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/channel-24-bd.png",Channel 24
 http://stvlive.net:8080/channel24/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ds3aThu.jpg",Jamuna TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/ekattor-tv-hd-bd.png",Ekattor TV HD
+http://stvlive.net:8080/ekattor/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/jamuna-tv-bd.png",Jamuna TV
 http://stvlive.net:8080/jamuna/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="",Deepto TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/deepto-tv-hd-bd.png",Deepto TV HD
 http://stvlive.net:8080/deepto/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/3RQcFQdV/starjalshahd.png",Star Jalsha HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-jalsha-hd-in.png",Star Jalsha HD
 http://stvlive.net:8080/starjalsha/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/refs/heads/main/countries/india/zee-bangla-hd-in.png",Zee Bangla HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/zee-bangla-hd-in.png",Zee Bangla HD
 http://stvlive.net:8080/zeebangla/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/3RQcFQdV/starjalshahd.png",Jalsha Movies HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/jalsha-movies-hd-in.png",Jalsha Movies HD
 http://stvlive.net:8080/jalshamovies/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/W4Lh50kc/SONY-AATH-HD.png",Sony Aath
-http://stvlive.net:8080/sonyaath/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ac/Star_Sports_2.jpg",Star Sports 2 HD
-http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/pdj5yXrb/Colors-HD.png",Colors HD
-http://stvlive.net:8080/colorshd/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/QxDjxvmJ/Star-Plus.png",Star Plus HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-plus-hd-in.png",Star Plus HD
 http://stvlive.net:8080/starplus/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/tT2qPJYG/Zee-TV-HD-2025.png",Zee TV HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/zee-tv-hd-in.png",Zee TV HD
 http://stvlive.net:8080/zeetv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/GmvxR8Mm/Star-Gold-2020.png",Star Gold HD
-http://stvlive.net:8080/stargold/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/qqbPBCgB/Sony-max-hd.png",Sony Max HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-max-hd-in.png",Sony Max HD
 http://stvlive.net:8080/sonymax/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/k2Bd3SgH/STAR-MOVIES-HD.png",Star Movies HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-gold-hd-in.png",Star Gold HD
+http://stvlive.net:8080/stargold/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/colors-hd-in.png",Colors HD
+http://stvlive.net:8080/colorshd/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-aath-in.png",Sony Aath
+http://stvlive.net:8080/sonyaath/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-sports-2-in.png",Star Sports 2
+http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-1-hd-in.png",Sony Ten 1 HD
+http://stvlive.net:8080/sonyten1/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png",Sony Ten 2 HD
+http://stvlive.net:8080/sonyten2/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-5-hd-in.png",Sony Ten 5 HD
+http://stvlive.net:8080/sonyten5/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-movies-hd-in.png",Star Movies HD
 http://stvlive.net:8080/starmovies/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png",Discovery HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/discovery-kids-in.png",Discovery HD
 http://stvlive.net:8080/discovery/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/6psvT4dX/Animal-Planet-HD-282018-n-v-29.png",Animal Planet HD
-http://stvlive.net:8080/animalplanet/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/MKVttQbr/national-geographic-hd.png",National Geographic HD
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/dd-india-hd-in.png",Nat Geo HD
 http://stvlive.net:8080/natgeo/tracks-v1a1/mono.m3u8
 
