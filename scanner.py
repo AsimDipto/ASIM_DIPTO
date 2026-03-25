@@ -1,140 +1,89 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-# ১. সার্ভার ইউআরএল (Port shoho)
+# ১. সার্ভার ইউআরএল
 base_url = "http://stvlive.net:8080/"
 
-# ২. আপনার দেওয়া সকল চ্যানেলের পূর্ণাঙ্গ ডাটা
+# ২. ১০৩+ চ্যানেলের পূর্ণাঙ্গ ডাটা (ID short & small letter-e kora hoyeche)
 CHANNELS_DATA = [
-    # --- জাতীয় ও সাধারণ বিনোদন ---
-    ("BTV", "BTV", ""),
-    ("BTVCHOTTO", "BTV Chottogram", ""),
-    ("BTVNEWS", "BTV News", ""),
-    ("SANGSADTV", "Sangsad TV", ""),
-    ("ATNNEWS", "ATN News", "https://i.postimg.cc/9fqFNKZ0/ATN-News-Logo-without-slogan-svg.png"),
-    ("BANGLAVISION", "Banglavision", ""),
-    ("NTV", "N TV", ""),
-    ("CHANNELI", "Channel I", ""),
-    ("BOISHAKHITV", "Boishakhi TV", ""),
-    ("RTV", "R TV", ""),
-    ("EKUSHEYTV", "Ekushey TV", ""),
-    ("ATNBANGLA", "ATN Bangla", "https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png"),
-    ("DESHTV", "Desh TV", ""),
-    ("MYTV", "My TV", ""),
-    ("MOVIEBANGLA", "Movie Bangla", ""),
-    ("MOHONATV", "Mohona TV", ""),
-    ("BIJOYTV", "Bijoy TV", ""),
-    ("INDEPENDENTTV", "Independent TV", "https://i.imgur.com/kviJN1i.png"),
-    ("SOMOYTV", "Somoy TV", "https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png"),
-    ("MAASRANGAHD", "Maasranga HD", "https://i.postimg.cc/GmFLcvNB/Maasranga-Television-Logo.jpg"),
-    ("GTV", "G TV", "https://i.postimg.cc/s2qpdYbJ/Logo-of-GTV-(Bangladesh).png"),
-    ("CHANNEL9", "Channel 9", ""),
-    ("CHANNEL24", "Channel 24", "https://i.imgur.com/MmhxR5E.png"),
-    ("SATV", "SA TV", ""),
-    ("ASIANTV", "Asian TV", ""),
-    ("EKHONTV", "Ekhon TV", ""),
-    ("JAMUNATV", "Jamuna TV", "https://i.imgur.com/ds3aThu.jpg"),
-    ("DEEPTOTV", "Deepto TV", ""),
-    ("GAANBANGLA", "Gaan Bangla", ""),
-    ("DBCNEWS", "DBC news", ""),
-    ("DURANTATV", "Duronto TV", "https://i.imgur.com/PK9Gm5g.png"),
-    ("NAGORIK", "Nagorik TV", "https://i.postimg.cc/hvn7pf00/Logo-of-Nagorik-TV.png"),
-    ("BANGLATV", "Bangla TV", ""),
-    ("ANANDATV", "Ananda TV", ""),
+    # --- BD Entertainment & News ---
+    ("btv", "BTV", ""), ("btvchotto", "BTV Chottogram", ""), ("btvnews", "BTV News", ""),
+    ("sangsad", "Sangsad TV", ""), ("atnnews", "ATN News", "https://i.postimg.cc/9fqFNKZ0/ATN-News-Logo-without-slogan-svg.png"),
+    ("banglavision", "Banglavision", ""), ("ntv", "N TV", ""), ("channeli", "Channel I", ""),
+    ("boishakhi", "Boishakhi TV", ""), ("rtv", "R TV", ""), ("ekushey", "Ekushey TV", ""),
+    ("atnbangla", "ATN Bangla", ""), ("desh", "Desh TV", ""), ("mytv", "My TV", ""),
+    ("moviebangla", "Movie Bangla", ""), ("mohona", "Mohona TV", ""), ("bijoy", "Bijoy TV", ""),
+    ("independent", "Independent TV", "https://i.imgur.com/kviJN1i.png"),
+    ("somoy", "Somoy TV", "https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png"),
+    ("maasranga", "Maasranga HD", ""), ("gtv", "G TV", ""), ("channel9", "Channel 9", ""),
+    ("channel24", "Channel 24", ""), ("satv", "SA TV", ""), ("asian", "Asian TV", ""),
+    ("ekhon", "Ekhon TV", ""), ("jamuna", "Jamuna TV", ""), ("deepto", "Deepto TV", ""),
+    ("gaanbangla", "Gaan Bangla", ""), ("dbcnews", "DBC news", ""), ("duranta", "Duronto TV", ""),
+    ("nagorik", "Nagorik TV", ""), ("banglatv", "Bangla TV", ""), ("ananda", "Ananda TV", ""),
 
-    # --- কলকাতা ও মুভি ---
-    ("JALSHAMOVIESHD", "Jalsha Movies HD", "https://i.postimg.cc/3RQcFQdV/starjalshahd.png"),
-    ("COLORSBANGLACINEMA", "Colors Bangla Cinema", ""),
-    ("ZEEBANGLACINEMA", "Zee Bangla Cinema", ""),
-    ("COLORSBANGLAHD", "Colors Bangla HD", ""),
-    ("SONYAAT", "Sony Aath", ""),
-    ("STARJALSHAHD", "Star Jalsha HD", ""),
-    ("ZEEBANGLAHD", "Zee Bangla HD", ""),
-    ("ENTERR10", "Enter10 Bangla", ""),
-    ("SONYYAY", "Sony Yay", ""),
-    ("TSPORTS", "T Sports HD", ""),
-    ("SUNBANGLAHD", "Sun Bangla HD", ""),
-    ("AAKASHAATH", "Aakash Aath", ""),
+    # --- West Bengal (Kolkata) ---
+    ("starjalsha", "Star Jalsha HD", ""), ("zeebangla", "Zee Bangla HD", ""),
+    ("jalshamovies", "Jalsha Movies HD", ""), ("colorsbangla", "Colors Bangla HD", ""),
+    ("colorsbanglacinema", "Colors Bangla Cinema", ""), ("zeebanglacinema", "Zee Bangla Cinema", ""),
+    ("sonyaath", "Sony Aath", ""), ("sunbangla", "Sun Bangla HD", ""), ("aakashaath", "Aakash Aath", ""),
+    ("enterr10", "Enter10 Bangla", ""), ("sonyyay", "Sony Yay", ""), ("ruposhi", "Ruposhi Bangla", ""),
+    ("news18bangla", "News18 Bangla", ""), ("zeenews24", "Zee 24 Ghanta", ""),
 
-    # --- হিন্দি এন্টারটেইনমেন্ট ---
-    ("COLORSHD", "Colors HD", ""),
-    ("COLORSCINEPLEXHD", "Colors Cineplex HD", ""),
-    ("STARPLUSHD", "Star Plus HD", ""),
-    ("STARGOLDHD", "Star Gold HD", ""),
-    ("STARGOLDSELECTHD", "Star Gold Select HD", ""),
-    ("STARBHARATHD", "Star Bharat HD", ""),
-    ("SONYENTHD", "Sony Entertainment TV HD", ""),
-    ("SONYMAXHD", "Sony Max", ""),
-    ("ZEETVHD", "Zee TV HD", ""),
-    ("ZOOM", "Zoom", ""),
-    ("ZING", "Zing", ""),
+    # --- Sports ---
+    ("tsports", "T Sports HD", ""), ("ptvsports", "PTV Sports HD", ""), ("asports", "A Sports HD", ""),
+    ("starsports1", "Star Sports 1 HD", ""), ("starsports2", "Star Sports 2 HD", ""),
+    ("starsports3", "Star Sports 3", ""), ("starsportsselect1", "Star Sports Select 1 HD", ""),
+    ("starsportsselect2", "Star Sports Select 2 HD", ""), ("sonysports1", "Sony Sports Ten 1 HD", ""),
+    ("sonysports2", "Sony Sports Ten 2 HD", ""), ("sonysports3", "Sony Sports Ten 3", ""),
+    ("sonysports5", "Sony Sports Ten 5 HD", ""), ("eurosports", "Eurosports", ""),
+    ("willow", "Willow Cricket", ""), ("beinsports", "Bein Sports", ""), ("golf", "Golf Sports", ""),
 
-    # --- স্পোর্টস ---
-    ("PTVSPORTSHD", "PTV Sports HD", ""),
-    ("ASPORTSHD", "A Sports HD", ""),
-    ("SONYSPORTS1HD", "Sony Sports Ten 1 HD", ""),
-    ("SONYSPORTS2HD", "Sony Sports Ten 2 HD", ""),
-    ("STARSPORTS1HD", "Star Sports 1 HD", ""),
-    ("STARSPORTS2HD", "Star Sports 2 HD", ""),
-    ("EUROSPORTSHD", "Eurosports", ""),
+    # --- Hindi Entertainment & Movies ---
+    ("colors", "Colors HD", ""), ("starplus", "Star Plus HD", ""), ("sonyent", "Sony Entertainment TV HD", ""),
+    ("zeetv", "Zee TV HD", ""), ("sabtv", "Sony SAB HD", ""), ("starbharat", "Star Bharat HD", ""),
+    ("stargold", "Star Gold HD", ""), ("sonymax", "Sony Max HD", ""), ("colorscineplex", "Colors Cineplex HD", ""),
+    ("zeecinema", "Zee Cinema HD", ""), ("andpictures", "And Pictures HD", ""), ("utvmovies", "UTV Movies", ""),
+    ("zoom", "Zoom", ""), ("zing", "Zing", ""), ("bindass", "Bindass", ""),
 
-    # --- মুভি ও ইংরেজি ---
-    ("MOVIESNOWHD", "Movies Now HD", ""),
-    ("STARMOVIESHD", "Star Movies HD", ""),
-    ("SONYPIXHD", "Sony Pix HD", ""),
-    ("ZEECAFEHD", "Zee Cafe HD", ""),
-    ("ANDPICTURSHD", "And Pictures HD", ""),
-    ("ANDFLIXHD", "And Flix HD", ""),
+    # --- English Movies & Infotainment ---
+    ("starmovies", "Star Movies HD", ""), ("sonypix", "Sony Pix HD", ""), ("moviesnow", "Movies Now HD", ""),
+    ("mnx", "MNX HD", ""), ("andflix", "And Flix HD", ""), ("andprive", "And Prive HD", ""),
+    ("zeecafe", "Zee Cafe HD", ""), ("discovery", "Discovery HD", ""), ("animalplanet", "Animal Planet HD", ""),
+    ("natgeo", "National Geographic HD", ""), ("natgeowild", "National Geo Wild HD", ""),
+    ("history", "History TV HD", ""), ("sonybbcearth", "Sony BBC Earth HD", ""),
+    ("tlc", "TLC HD", ""), ("travelxp", "Travel XP HD", ""), ("investigationdiscovery", "ID HD", ""),
 
-    # --- কার্টুন ও ইনফোটেইনমেন্ট ---
-    ("HUNGAMA", "Hungama", ""),
-    ("POGO", "Pogo", ""),
-    ("NICKJR", "Nick Jr", ""),
-    ("CARTOONNETWORK", "Cartoon Network HD", ""),
-    ("ANIMALPLANETHD", "Animal Planet HD", ""),
-    ("DISCOVERYHD", "Discovery HD", ""),
-    ("NATGEOHD", "National Geographic HD", ""),
-    ("SONYBBCEARTHHD", "Sony BBC Earth HD", ""),
-    ("HISTORYTVHD", "History TV HD", ""),
-    ("SONYEARTH", "Sony Earth", "")
+    # --- Kids ---
+    ("hungama", "Hungama", ""), ("pogo", "Pogo", ""), ("nick", "Nick", ""), ("nickjr", "Nick Jr", ""),
+    ("sonic", "Sonic", ""), ("cartoonnetwork", "Cartoon Network HD", ""), ("disney", "Disney Channel", ""),
+    ("balbharat", "ETV Bal Bharat", ""), ("marvelhq", "Marvel HQ", "")
 ]
 
-# ৩. সম্ভাব্য সাফিক্স (Suffixes)
-POSSIBLE_SUFFIXES = [
-    "/tracks-v1a1/mono.m3u8", 
-    "/mono.m3u8", 
-    "/index.m3u8",
-    "/playlist.m3u8"
-]
+# ৩. সম্ভাব্য সাফিক্স
+POSSIBLE_SUFFIXES = ["/tracks-v1a1/mono.m3u8", "/mono.m3u8", "/index.m3u8", "/playlist.m3u8"]
 
 def scan_logic(ch, session, results):
     ch_id, display_name, logo_url = ch
     
-    # Nam theke 'hd' ba 'tv' thakle seta muche die base name ber kora
-    clean_base = ch_id.lower().replace("hd", "").replace("tv", "")
-    
-    # Apnar chawa 4-ti variants (Deep Scan)
-    # Jemon: deepto, deeptotv, deeptotvhd, deeptohd
+    # 4-ti variant auto generate korbe: mohona, mohonatv, mohonatvhd, mohonahd
     variants = [
-        clean_base,               # deepto
-        clean_base + "tv",        # deeptotv
-        clean_base + "tvhd",      # deeptotvhd
-        clean_base + "hd"         # deeptohd
+        ch_id,
+        ch_id + "tv",
+        ch_id + "tvhd",
+        ch_id + "hd"
     ]
     
-    # Duplicate variant bad die check kora
     for variant in dict.fromkeys(variants):
         for sfx in POSSIBLE_SUFFIXES:
             url = f"{base_url}{variant}{sfx}"
             try:
-                # User-Agent VLC player set kora hoyeche
                 headers = {'User-Agent': 'VLC/3.0.12'}
-                r = session.head(url, headers=headers, timeout=2.5, allow_redirects=True)
+                r = session.head(url, headers=headers, timeout=2.0, allow_redirects=True)
                 
                 if r.status_code == 200:
                     results.append((display_name, url, logo_url))
-                    print(f"✅ Found: {variant} ({display_name})")
-                    return # Link peye gele porer variant check dorkar nai
+                    print(f"✅ Found: {variant}")
+                    return 
             except:
                 continue
 
@@ -142,25 +91,25 @@ def main():
     session = requests.Session()
     found_channels = []
 
-    print(f"🔍 New Py Deep Scanning starting on {base_url}...")
+    print(f"🔍 Deep Scanning 103+ Channels on {base_url}...")
 
-    # fast scan-er jonno Thread count 30
-    with ThreadPoolExecutor(max_workers=30) as executor:
+    # Fast scan-er jonno 50 threads
+    with ThreadPoolExecutor(max_workers=50) as executor:
         for ch in CHANNELS_DATA:
             executor.submit(scan_logic, ch, session, found_channels)
 
-    # Serial onujayi M3U file save
+    # Serial maintain kore save kora
     output_file = "Fuck-you-Ankita.m3u"
     with open(output_file, "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for original in CHANNELS_DATA:
             for item in found_channels:
                 if item[0] == original[1]:
-                    # group-title parameter ti bad dewa hoyeche
+                    # No group-title
                     f.write(f'#EXTINF:-1 tvg-logo="{item[2]}",{item[0]}\n{item[1]}\n\n')
     
-    print(f"\n✨ Update Complete. Total {len(found_channels)} channels found.")
-    print(f"📁 File saved as: {output_file}")
+    print(f"\n✨ Scan Complete. Total {len(found_channels)} channels found.")
+    print(f"📁 File: {output_file}")
 
 if __name__ == "__main__":
     main()
