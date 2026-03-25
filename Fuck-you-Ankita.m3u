@@ -9,13 +9,13 @@ http://stvlive.net:8080/banglavision/tracks-v1a1/mono.m3u8
 http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",Channel I
-http://stvlive.net:8080/channeli/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/channeli/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/9H65SwCG/ATN-BANGLA-HD.png",ATN Bangla
+#EXTINF:-1 tvg-logo="",ATN Bangla
 http://stvlive.net:8080/atnbangla/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",Movie Bangla
-http://stvlive.net:8080/moviebangla/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/moviebangla/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/kviJN1i.png",Independent TV
 http://stvlive.net:8080/independent/tracks-v1a1/mono.m3u8
@@ -23,17 +23,14 @@ http://stvlive.net:8080/independent/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co.com/fYCbByKT/SOMOY-TV-HD.png",Somoy TV
 http://stvlive.net:8080/somoy/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MmhxR5E.png",Channel 24
+#EXTINF:-1 tvg-logo="",Channel 24
 http://stvlive.net:8080/channel24/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ds3aThu.jpg",Jamuna TV
+#EXTINF:-1 tvg-logo="",Jamuna TV
 http://stvlive.net:8080/jamuna/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",Deepto TV
 http://stvlive.net:8080/deepto/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/3RQcFQdV/starjalshahd.png",Jalsha Movies HD
-http://stvlive.net:8080/jalshamovies/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",Star Jalsha HD
 http://stvlive.net:8080/starjalsha/tracks-v1a1/mono.m3u8
@@ -41,32 +38,41 @@ http://stvlive.net:8080/starjalsha/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="",Zee Bangla HD
 http://stvlive.net:8080/zeebangla/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="",Jalsha Movies HD
+http://stvlive.net:8080/jalshamovies/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Sony Aath
+http://stvlive.net:8080/sonyaath/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Star Sports 2 HD
+http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 tvg-logo="",Colors HD
 http://stvlive.net:8080/colorshd/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",Star Plus HD
 http://stvlive.net:8080/starplus/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="",Star Gold HD
-http://stvlive.net:8080/stargold/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="",Sony Max
-http://stvlive.net:8080/sonymax/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="",Zee TV HD
 http://stvlive.net:8080/zeetv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="",Star Sports 2 HD
-http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="",Star Gold HD
+http://stvlive.net:8080/stargold/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Sony Max HD
+http://stvlive.net:8080/sonymax/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Zee Cinema HD
+http://stvlive.net:8080/zeecinema/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",Star Movies HD
 http://stvlive.net:8080/starmovies/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="",Animal Planet HD
-http://stvlive.net:8080/animalplanet/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="",Discovery HD
 http://stvlive.net:8080/discovery/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="",Animal Planet HD
+http://stvlive.net:8080/animalplanet/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="",National Geographic HD
 http://stvlive.net:8080/natgeo/tracks-v1a1/mono.m3u8
