@@ -68,8 +68,8 @@ CHANNELS_DATA = [
     # --- Sports ---
     ("starsports1", "Star Sports 1 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-sports-1-in.png"),
     ("starsports2", "Star Sports 2", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-sports-2-in.png"),
-    ("sonyten1", "Sony Ten 1 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-1-hd-in.png"),
-    ("sonyten", "Sony Ten 2 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png"),
+    ("sonyten", "Sony Ten 1 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-1-hd-in.png"),
+    ("sonyten2", "Sony Ten 2 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png"),
     ("sonyten3", "Sony Ten 3 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-3-hd-in.png"),
     ("sonyten5", "Sony Ten 5 HD", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/1200px-Star_Sports_1_HD.png"),
     ("sports18", "Sports 18 HD", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sports-18-in.png"),
