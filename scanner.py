@@ -1,10 +1,10 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-# ১. সার্ভার আইপি
-base_url = "http://203.18.159.115/"
+# ১. সার্ভার ইউআরএল (Port shoho)
+base_url = "http://stvlive.net:8080/"
 
-# ২. আপনার দেওয়া পারমানেন্ট লোগো লিঙ্কসহ ৬২টি চ্যানেলের ডাটা
+# ২. আপনার দেওয়া সকল চ্যানেলের পূর্ণাঙ্গ ডাটা (১০৩টি চ্যানেল)
 CHANNELS_DATA = [
     # --- জাতীয় ও সাধারণ বিনোদন ---
     ("BTV", "BTV", ""),
@@ -121,32 +121,34 @@ CHANNELS_DATA = [
     ("SONYEARTH", "Sony Earth", "")
 ]
 
-
-# ৩. মালিক যদি লিঙ্কের ফরম্যাট বদলায় (Deep Suffix Check)
+# ৩. সম্ভাব্য সাফিক্স
 POSSIBLE_SUFFIXES = [
     "/tracks-v1a1/mono.m3u8", 
     "/mono.m3u8", 
-    "/index.m3u8", 
+    "/index.m3u8",
     "/playlist.m3u8"
 ]
 
 def scan_logic(ch, session, results):
     ch_id, display_name, logo_url = ch
-    # মালিক বড় বা ছোট হাতের নাম বদলালে এটি ধরবে
-    id_variants = [ch_id.upper(), ch_id.lower()]
     
-    for variant in id_variants:
+    # ID ke small letters kora ebong "hd" thakle seta bad diyeo try kora
+    base_variant = ch_id.lower()
+    variants = [base_variant]
+    if "hd" in base_variant:
+        variants.append(base_variant.replace("hd", ""))
+    
+    for variant in dict.fromkeys(variants):
         for sfx in POSSIBLE_SUFFIXES:
             url = f"{base_url}{variant}{sfx}"
             try:
-                # নিজেকে অরিজিনাল প্লেয়ার হিসেবে পরিচয় দেওয়া যাতে ব্লক না করে
-                headers = {'User-Agent': 'VLANDANDXPLORHDHDIXHDLC/3.0.12'}
-                r = session.head(url, headers=headers, timeout=2.5, allow_redirects=True)
+                headers = {'User-Agent': 'VLC/3.0.12'}
+                r = session.head(url, headers=headers, timeout=3.0, allow_redirects=True)
                 
                 if r.status_code == 200:
                     results.append((display_name, url, logo_url))
-                    print(f"✅ Found: {display_name}")
-                    return # সচল লিঙ্ক পাওয়া গেলে পরের ভ্যারিয়েন্টে যাবে না
+                    print(f"✅ Found: {variant}")
+                    return 
             except:
                 continue
 
@@ -154,22 +156,24 @@ def main():
     session = requests.Session()
     found_channels = []
 
-    print("🔍 Deep Scanning starting with Permanent Logos...")
+    print(f"🔍 Deep Scanning started on {base_url}...")
 
-    # ১৫ জন 'শিকারী' একসাথে খুঁজবে যাতে দ্রুত শেষ হয়
-    with ThreadPoolExecutor(max_workers=15) as executor:
+    # ২৫ জন 'শিকারী' একসাথে খুঁজবে যাতে দ্রুত শেষ হয়
+    with ThreadPoolExecutor(max_workers=25) as executor:
         for ch in CHANNELS_DATA:
             executor.submit(scan_logic, ch, session, found_channels)
 
-    # সিরিয়াল ঠিক রেখে ফাইল সেভ করা
-    with open("Fuck-you-Ankita.m3u", "w", encoding='utf-8') as f:
+    # সিরিয়াল ঠিক রেখে ফাইল সেভ করা (group-title bad dewa hoyeche)
+    output_file = "Fuck-you-Ankita.m3u"
+    with open(output_file, "w", encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for original in CHANNELS_DATA:
             for item in found_channels:
                 if item[0] == original[1]:
-                    f.write(f'#EXTINF:-1 tvg-logo="{item[2]}" group-title="Asim_Dipto BDIX",{item[0]}\n{item[1]}\n\n')
+                    # group-title parameter ti muche dewa hoyeche
+                    f.write(f'#EXTINF:-1 tvg-logo="{item[2]}",{item[0]}\n{item[1]}\n\n')
     
-    print(f"✨ Update Complete. Total {len(found_channels)} channels found.")
+    print(f"✨ Update Complete. Total {len(found_channels)} channels found. Saved as: {output_file}")
 
 if __name__ == "__main__":
     main()
