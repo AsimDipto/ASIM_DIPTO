@@ -30,7 +30,7 @@ http://stvlive.net:8080/independent/tracks-v1a1/mono.m3u8
 http://stvlive.net:8080/channel24/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/ekattor-tv-hd-bd.png",Ekattor TV HD
-http://stvlive.net:8080/ekattor/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/ekattor/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/jamuna-tv-bd.png",Jamuna TV
 http://stvlive.net:8080/jamuna/tracks-v1a1/mono.m3u8
@@ -39,7 +39,7 @@ http://stvlive.net:8080/jamuna/tracks-v1a1/mono.m3u8
 http://stvlive.net:8080/deepto/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-jalsha-hd-in.png",Star Jalsha HD
-http://stvlive.net:8080/starjalsha/mono.m3u8
+http://stvlive.net:8080/starjalsha/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/zee-bangla-hd-in.png",Zee Bangla HD
 http://stvlive.net:8080/zeebangla/tracks-v1a1/mono.m3u8
