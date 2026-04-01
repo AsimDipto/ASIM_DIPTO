@@ -6,7 +6,7 @@ http://stvlive.net:8080/btv/tracks-v1a1/mono.m3u8
 http://stvlive.net:8080/atnbangla/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/n-tv-hd-bd.png",N TV HD
-http://stvlive.net:8080/ntv/mono.m3u8
+http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/atn-news-hd-bd.png",ATN News HD
 http://stvlive.net:8080/atnnews/tracks-v1a1/mono.m3u8
