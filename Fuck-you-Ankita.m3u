@@ -5,11 +5,11 @@ http://stvlive.net:8080/btv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/atn-bangla-hd-bd.png",ATN Bangla HD
 http://stvlive.net:8080/atnbangla/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/channel-i-hd-bd.png",Channel I HD
-http://stvlive.net:8080/channeli/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/n-tv-hd-bd.png",N TV HD
-http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/ntv/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/atn-news-hd-bd.png",ATN News HD
+http://stvlive.net:8080/atnnews/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/banglavision-hd-bd.png",Banglavision HD
 http://stvlive.net:8080/banglavision/tracks-v1a1/mono.m3u8
@@ -28,9 +28,6 @@ http://stvlive.net:8080/channel24/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/ekattor-tv-hd-bd.png",Ekattor TV HD
 http://stvlive.net:8080/ekattor/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/jamuna-tv-bd.png",Jamuna TV
-http://stvlive.net:8080/jamuna/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/deepto-tv-hd-bd.png",Deepto TV HD
 http://stvlive.net:8080/deepto/tracks-v1a1/mono.m3u8
@@ -75,7 +72,7 @@ http://stvlive.net:8080/sonyten5/tracks-v1a1/mono.m3u8
 http://stvlive.net:8080/starmovies/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Discovery_HD_2009.png",Discovery HD
-http://stvlive.net:8080/discovery/mono.m3u8
+http://stvlive.net:8080/discovery/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/MKVttQbr/national-geographic-hd.png",Nat Geo HD
 http://stvlive.net:8080/natgeo/tracks-v1a1/mono.m3u8
