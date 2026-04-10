@@ -26,9 +26,3 @@ http://stvlive.net:8080/ekattor/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/deepto-tv-hd-bd.png",Deepto TV HD
 http://stvlive.net:8080/deepto/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/star-sports-2-in.png",Star Sports 2
-http://stvlive.net:8080/starsports2/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-ten-2-hd-in.png",Sony Ten 2 HD
-http://stvlive.net:8080/sonyten2/tracks-v1a1/mono.m3u8
-
