@@ -6,13 +6,13 @@ http://stvlive.net:8080/btv/tracks-v1a1/mono.m3u8
 http://stvlive.net:8080/atnbangla/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/n-tv-hd-bd.png",N TV HD
-http://stvlive.net:8080/ntv/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/ntv/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/banglavision-hd-bd.png",Banglavision HD
-http://stvlive.net:8080/banglavision/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/banglavision/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/movie-bangla-tv-bd.png",Movie Bangla
-http://stvlive.net:8080/moviebangla/tracks-v1a1/mono.m3u8
+http://stvlive.net:8080/moviebangla/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/independent-bd.png",Independent TV
 http://stvlive.net:8080/independent/tracks-v1a1/mono.m3u8
