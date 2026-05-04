@@ -1,7 +1,7 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-base_url = "http://stvlive.net:8080/"
+base_url = "http://116.204.149.16/"
 
 CHANNELS_DATA = [
     # --- Bangladesh (BD) ---
@@ -96,7 +96,7 @@ CHANNELS_DATA = [
     ("sonyyay", "Sony Yay", "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/sony-yay-in.png")
 ]
 
-POSSIBLE_SUFFIXES = ["/tracks-v1a1/mono.m3u8", "/mono.m3u8", "/index.m3u8", "/playlist.m3u8"]
+POSSIBLE_SUFFIXES = ["/index.m3u8", "/mono.m3u8", "/index.m3u8", "/playlist.m3u8"]
 
 def scan_logic(ch, session, results):
     ch_id, display_name, logo_url = ch
