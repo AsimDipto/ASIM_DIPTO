@@ -1,1 +1,25 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/r-tv-hd-bd.png",R TV HD
+http://116.204.149.16/rtvhd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/my-tv-hd-bd.png",My TV HD
+http://116.204.149.16/mytv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/somoy-bd.png",Somoy News
+http://116.204.149.16/somoytv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/maasranga-hd-bd.png",Maasranga HD
+http://116.204.149.16/maasranga/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/sa-tv-hd-bd.png",SA TV HD
+http://116.204.149.16/satv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/bangla-tv-hd-bd.png",Bangla TV HD
+http://116.204.149.16/banglatv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/global-television-hd-bd.png",Global TV HD
+http://116.204.149.16/globaltv/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/India/zee-cafe-hd-in.png",Zee Cafe HD
+http://116.204.149.16/zeecafehd/index.m3u8
+
