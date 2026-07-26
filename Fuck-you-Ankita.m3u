@@ -17,3 +17,6 @@ http://116.204.149.16/satv/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/bangla-tv-hd-bd.png",Bangla TV HD
 http://116.204.149.16/banglatv/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/global-television-hd-bd.png",Global TV HD
+http://116.204.149.16/globaltv/index.m3u8
+
