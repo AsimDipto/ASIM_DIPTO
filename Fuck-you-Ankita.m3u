@@ -6,7 +6,7 @@ http://116.204.149.16/rtvhd/index.m3u8
 http://116.204.149.16/mytv/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/somoy-bd.png",Somoy News
-http://116.204.149.16/somoytv/mono.m3u8
+http://116.204.149.16/somoytv/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/maasranga-hd-bd.png",Maasranga HD
 http://116.204.149.16/maasranga/index.m3u8
